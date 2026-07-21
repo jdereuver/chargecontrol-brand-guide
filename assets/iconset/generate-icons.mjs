@@ -25,9 +25,10 @@
  *   3. Rebuild icon-set-preview.svg/png + chargecontrol-icon-set.zip and add the
  *      icon's card to the #iconset grid in index.html (same markup as siblings).
  *
- * The 18 original icons (EXISTING below) predate this generator and are kept
+ * The 17 original icons (EXISTING below) predate this generator and are kept
  * byte-identical — this script never overwrites them, it only lists them in
- * manifest.json for the grid/zip tooling.
+ * manifest.json for the grid/zip tooling. (home-energy was migrated to NEW
+ * when it was redesigned to match the Home Energy Hub sub-brand mark.)
  */
 import fs from 'fs';
 import path from 'path';
@@ -73,7 +74,6 @@ const EXISTING = [
   ['roaming', 'charging', 'Roaming & Locations'],
   ['solar', 'solar', 'Solar'],
   ['battery', 'solar', 'Battery Storage'],
-  ['home-energy', 'home', 'Home Energy Hub'],
   ['grid', 'grid', 'Grid / VPP'],
   ['v2g', 'grid', 'Vehicle-to-Grid'],
   ['trading', 'grid', 'Energy Trading'],
@@ -152,6 +152,18 @@ const NEW = [
     P('M3 21h18'), P('M5 17.5l4.5-4.5 3.5 2.5 6-6.5'),
   ]],
   // ---------- Home Energy ----------
+  // home-energy mirrors the Home Energy Hub sub-brand mark (hub starburst):
+  // central house + mini bolt with six radiating spokes ending in cyan nodes.
+  ['home-energy', 'home', 'Home Energy Hub', [
+    P('M12 7.8 8.6 10.8v4.9a.9.9 0 0 0 .9.9h5a.9.9 0 0 0 .9-.9v-4.9z'),
+    bolt(12, 12.4, 0.62),
+    L(12, 6.2, 12, 4.9), C(12, 3.4, 1.1, { accent: true, fill: true }),
+    L(12, 18.3, 12, 19.1), C(12, 20.6, 1.1, { accent: true, fill: true }),
+    L(16.4, 9.3, 17.8, 8.5), C(19.3, 7.6, 1.1, { accent: true, fill: true }),
+    L(7.6, 9.3, 6.2, 8.5), C(4.7, 7.6, 1.1, { accent: true, fill: true }),
+    L(16.4, 15.1, 17.8, 15.9), C(19.3, 16.8, 1.1, { accent: true, fill: true }),
+    L(7.6, 15.1, 6.2, 15.9), C(4.7, 16.8, 1.1, { accent: true, fill: true }),
+  ]],
   ['smart-meter', 'home', 'Smart Meter', [
     R(5, 3, 14, 18, 2), R(8, 6, 8, 4, 0.5, { accent: true }),
     C(9, 15, 1, { fill: true }), C(12, 15, 1, { fill: true }), C(15, 15, 1, { fill: true }),

@@ -224,7 +224,7 @@
    "slug": "home-energy",
    "domain": "home",
    "label": "Home Energy Hub",
-   "existing": true
+   "existing": false
   },
   {
    "slug": "p1-connection",
