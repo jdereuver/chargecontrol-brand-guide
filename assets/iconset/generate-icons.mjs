@@ -528,3 +528,173 @@ fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify({ domains: DOMA
 console.log(`icons total: ${manifest.length} (new: ${NEW.length}, existing: ${EXISTING.length})`);
 const files = fs.readdirSync(OUT).filter(f => f.endsWith('.svg'));
 console.log('svg files:', files.length);
+
+/* ============================================================================
+ * DERIVED OUTPUTS — preview sheet, PNG, ZIP, and the #iconset grid in
+ * index.html are ALL regenerated here from the manifest so they can never
+ * drift from the set (Task #4869). Everything below is deterministic:
+ * running this script twice in a row produces byte-identical outputs.
+ * ==========================================================================*/
+import zlib from 'zlib';
+import crypto from 'crypto';
+
+const writeIfChanged = (file, content) => {
+  const buf = Buffer.isBuffer(content) ? content : Buffer.from(content);
+  if (fs.existsSync(file) && fs.readFileSync(file).equals(buf)) return false;
+  fs.writeFileSync(file, buf);
+  return true;
+};
+const xml = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const domainLabel = Object.fromEntries(DOMAINS);
+const iconInner = slug => {
+  const s = fs.readFileSync(path.join(OUT, `cc-icon-${slug}.svg`), 'utf8');
+  return s.replace(/^<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+};
+
+/* ---------- 1. icon-set-preview.svg (8 cells/row, 148x104 grid) ---------- */
+const CELL_W = 148, ROW_H = 104, LEFT = 58, TOP_GAP = 24, SECTION_GAP = 128;
+const byDomain = DOMAINS.map(([id, label]) => [id, label, manifest.filter(m => m.domain === id)])
+  .filter(([, , icons]) => icons.length > 0);
+
+let body = '', headerY = 134;
+for (const [, label, icons] of byDomain) {
+  body += `<text x="16" y="${headerY}" font-family="Outfit" font-size="17" font-weight="600" fill="#0B2347">${xml(label)}</text>\n`;
+  body += `<text x="${32 + 7.5 * label.length}" y="${headerY}" font-family="Inter" font-size="12" fill="#64748B">${icons.length} icons</text>\n`;
+  let rowY = headerY + TOP_GAP;
+  icons.forEach((m, i) => {
+    const col = i % 8;
+    if (i > 0 && col === 0) rowY += ROW_H;
+    const x = LEFT + col * CELL_W;
+    body += `<g transform="translate(${x},${rowY}) scale(2)">${iconInner(m.slug)}</g>\n`;
+    body += `<text x="${x + 24}" y="${rowY + 66}" text-anchor="middle" font-family="Inter" font-size="10.5" fill="#334155">${xml(m.label)}</text>\n`;
+  });
+  headerY = rowY + SECTION_GAP;
+}
+const totalH = headerY - SECTION_GAP + 130;
+const previewSvg =
+  `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="${totalH}" viewBox="0 0 1200 ${totalH}">\n` +
+  `<rect width="100%" height="100%" fill="#FFFFFF"/>\n` +
+  `<rect x="0" y="0" width="1200" height="84" fill="#0B2347"/>\n` +
+  `<text x="16" y="36" font-family="Outfit" font-size="24" font-weight="700" fill="#FFFFFF">ChargeControl Icon Set</text>\n` +
+  `<text x="16" y="62" font-family="Inter" font-size="13" fill="#7DD3FC">${manifest.length} icons \u00b7 24px grid \u00b7 stroke 2 \u00b7 round caps \u00b7 navy #0B2347 + cyan #0EA5E9 \u00b7 primary and white-on-dark variants</text>\n` +
+  body + `</svg>`;
+const previewPath = path.join(OUT, 'icon-set-preview.svg');
+const svgChanged = writeIfChanged(previewPath, previewSvg);
+console.log(`icon-set-preview.svg: ${svgChanged ? 'UPDATED' : 'unchanged'} (${totalH}px tall)`);
+
+/* ---------- 2. icon-set-preview.png (sharp; only when the SVG changed) ---- */
+const pngPath = path.join(OUT, 'icon-set-preview.png');
+if (svgChanged || !fs.existsSync(pngPath)) {
+  try {
+    let sharp;
+    try {
+      sharp = (await import('sharp')).default;
+    } catch {
+      // fall back to resolving from the CWD (e.g. a workspace with sharp installed)
+      const { createRequire } = await import('module');
+      sharp = createRequire(path.join(process.cwd(), 'noop.js'))('sharp');
+    }
+    // Outfit/Inter must be installed as system fonts (e.g. ~/.fonts + fc-cache)
+    const png = await sharp(Buffer.from(previewSvg), { density: 96 }).png().toBuffer();
+    fs.writeFileSync(pngPath, png);
+    console.log(`icon-set-preview.png: rasterized (${png.length} bytes)`);
+  } catch (e) {
+    console.error(`icon-set-preview.png: FAILED to rasterize — ${e.message}`);
+    console.error('Install sharp + Outfit/Inter fonts (~/.fonts, fc-cache -f) and re-run.');
+    process.exitCode = 1;
+  }
+} else {
+  console.log('icon-set-preview.png: unchanged (SVG identical)');
+}
+
+/* ---------- 3. chargecontrol-icon-set.zip (deterministic, stored) --------- */
+function buildZip(entries) { // entries: [name, Buffer] sorted; fixed DOS date
+  const dosTime = 0, dosDate = (2026 - 1980) << 9 | (1 << 5) | 1; // 2026-01-01 00:00
+  const files = [], central = [];
+  let offset = 0;
+  for (const [name, data] of entries) {
+    const nameBuf = Buffer.from(name);
+    const crc = zlib.crc32 ? zlib.crc32(data) : (() => { // node <20.15 fallback
+      let c = ~0; for (const b of data) { c ^= b; for (let k = 0; k < 8; k++) c = (c >>> 1) ^ (0xEDB88320 & -(c & 1)); } return ~c >>> 0;
+    })();
+    const comp = zlib.deflateRawSync(data, { level: 9 });
+    const method = comp.length < data.length ? 8 : 0;
+    const payload = method === 8 ? comp : data;
+    const lh = Buffer.alloc(30);
+    lh.writeUInt32LE(0x04034b50, 0); lh.writeUInt16LE(20, 4); lh.writeUInt16LE(0, 6);
+    lh.writeUInt16LE(method, 8); lh.writeUInt16LE(dosTime, 10); lh.writeUInt16LE(dosDate, 12);
+    lh.writeUInt32LE(crc >>> 0, 14); lh.writeUInt32LE(payload.length, 18); lh.writeUInt32LE(data.length, 22);
+    lh.writeUInt16LE(nameBuf.length, 26); lh.writeUInt16LE(0, 28);
+    files.push(lh, nameBuf, payload);
+    const ch = Buffer.alloc(46);
+    ch.writeUInt32LE(0x02014b50, 0); ch.writeUInt16LE(20, 4); ch.writeUInt16LE(20, 6); ch.writeUInt16LE(0, 8);
+    ch.writeUInt16LE(method, 10); ch.writeUInt16LE(dosTime, 12); ch.writeUInt16LE(dosDate, 14);
+    ch.writeUInt32LE(crc >>> 0, 16); ch.writeUInt32LE(payload.length, 20); ch.writeUInt32LE(data.length, 24);
+    ch.writeUInt16LE(nameBuf.length, 28);
+    ch.writeUInt32LE(offset, 42);
+    central.push(ch, nameBuf);
+    offset += 30 + nameBuf.length + payload.length;
+  }
+  const cd = Buffer.concat(central);
+  const eocd = Buffer.alloc(22);
+  eocd.writeUInt32LE(0x06054b50, 0); eocd.writeUInt16LE(entries.length, 8); eocd.writeUInt16LE(entries.length, 10);
+  eocd.writeUInt32LE(cd.length, 12); eocd.writeUInt32LE(offset, 16);
+  return Buffer.concat([...files, cd, eocd]);
+}
+const zipNames = manifest.flatMap(m => [`cc-icon-${m.slug}.svg`, `cc-icon-${m.slug}-white.svg`]).sort();
+const zipEntries = zipNames.map(n => [n, fs.readFileSync(path.join(OUT, n))]);
+const zipPath = path.join(OUT, 'chargecontrol-icon-set.zip');
+const zipChanged = writeIfChanged(zipPath, buildZip(zipEntries));
+console.log(`chargecontrol-icon-set.zip: ${zipChanged ? 'UPDATED' : 'unchanged'} (${zipEntries.length} files)`);
+
+/* ---------- 4. index.html #iconset grid + icon counts --------------------- */
+// ?v= stamps use the same 10-char git blob sha convention as
+// scripts/version-brand-guide-assets.mjs (idempotent with it).
+const REPO_ROOT = path.resolve(OUT, '..', '..');
+const INDEX = path.join(REPO_ROOT, 'index.html');
+const blobV = rel => {
+  const buf = fs.readFileSync(path.join(REPO_ROOT, rel));
+  return crypto.createHash('sha1').update(`blob ${buf.length}\0`).update(buf).digest('hex').slice(0, 10);
+};
+if (!fs.existsSync(INDEX) || !fs.existsSync(path.join(OUT, 'manifest.json'))) {
+  console.log('index.html: skipped (not running inside the brand-guide repo)');
+} else {
+  let html = fs.readFileSync(INDEX, 'utf8');
+  const N = manifest.length;
+  // counts (4 spots)
+  html = html.replace(/\d+ product-domain icons/, `${N} product-domain icons`);
+  html = html.replace(/all \d+ icons, both variants/, `all ${N} icons, both variants`);
+  html = html.replace(/Search \d+ icons&hellip;/, `Search ${N} icons&hellip;`);
+  html = html.replace(/(id="icon-count"[^>]*>)\d+ icons</, `$1${N} icons<`);
+  // iconset asset refs (preview png/svg, zip, generator, manifest) — restamp ?v
+  for (const rel of ['assets/iconset/icon-set-preview.png', 'assets/iconset/icon-set-preview.svg',
+    'assets/iconset/chargecontrol-icon-set.zip', 'assets/iconset/generate-icons.mjs',
+    'assets/iconset/manifest.json']) {
+    html = html.replaceAll(new RegExp(`${rel.replace(/[./]/g, '\\$&')}(\\?v=[0-9a-f]+)?`, 'g'), `${rel}?v=${blobV(rel)}`);
+  }
+  // domain pills
+  const pills = `  <div id="icon-pills" style="margin-bottom:20px"><span class="pill active" data-dom="" onclick="ccIconDomain(this)">All</span>` +
+    byDomain.map(([id, label]) => `<span class="pill" data-dom="${id}" onclick="ccIconDomain(this)">${xml(label)}</span>`).join('') + `</div>`;
+  html = html.replace(/^ {2}<div id="icon-pills".*$/m, pills);
+  // icon groups (between the pills line and the #icon-empty line)
+  const groups = byDomain.map(([id, label, icons]) => {
+    const cards = icons.map(m => {
+      const lbl = xml(m.label);
+      const v1 = blobV(`assets/iconset/cc-icon-${m.slug}.svg`);
+      const v2 = blobV(`assets/iconset/cc-icon-${m.slug}-white.svg`);
+      const src = `assets/iconset/cc-icon-${m.slug}.svg?v=${v1}`;
+      return `    <div class="card icon-card" data-dom="${id}" data-s="${xml(m.label.toLowerCase())} ${m.slug}">` +
+        `<div class="preview" style="min-height:76px;padding:14px"><img src="${src}" alt="${lbl}" style="width:40px;height:40px" loading="lazy"></div>` +
+        `<div class="pad" style="padding:10px 12px"><h4 style="font-size:.8rem">${lbl}</h4>` +
+        `<a class="dl" href="${src}" download>SVG</a>` +
+        `<a class="dl" href="assets/iconset/cc-icon-${m.slug}-white.svg?v=${v2}" download>White</a></div></div>`;
+    }).join('\n');
+    return `  <div class="icon-group" data-dom="${id}"><h3>${xml(label)} <span class="meta" style="font-weight:400;font-size:.8rem">&middot; ${icons.length}</span></h3>\n  <div class="grid g6">\n${cards}\n  </div></div>`;
+  }).join('\n');
+  html = html.replace(
+    /(^ {2}<div id="icon-pills".*$\n)[\s\S]*?(^ {2}<p id="icon-empty")/m,
+    (m, a, b) => `${a}${groups}\n${b}`
+  );
+  const htmlChanged = writeIfChanged(INDEX, html);
+  console.log(`index.html #iconset: ${htmlChanged ? 'UPDATED' : 'unchanged'}`);
+}
