@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="euroFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.30"/><stop offset="100%" stop-color="#22C55E" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1400" fill="#F8FAFC"/>
+<rect width="1200" height="230" fill="url(#bgNavy)"/>
+<g transform="translate(70,62) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="168" y="112" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+<text x="72" y="168" font-family="Outfit" font-weight="500" font-size="20" letter-spacing="5" fill="#38BDF8">GRATIS LAADPUNTENSCAN</text>
+<text x="70" y="212" font-family="Outfit" font-weight="700" font-size="42" fill="#FFFFFF">De gratis laadpuntenscan — zo werkt het</text>
+<text x="70" y="296" font-family="Inter" font-size="23" fill="#475569">Jullie EV's verdienen geld tijdens het laden — sinds 1 januari. Doe de gratis scan;</text>
+<text x="70" y="330" font-family="Inter" font-size="23" fill="#475569">binnen 48 uur zie je jullie eigen bedrag.</text>
+<rect x="70" y="390" width="330" height="330" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<rect x="70" y="390" width="330" height="10" rx="5" fill="#0EA5E9"/>
+<circle cx="235" cy="490" r="52" fill="#0EA5E9"/>
+<g transform="translate(177.8,432.8) scale(4.766666666666667)"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11h4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 16h4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 11h.01" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 16h.01" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="235" y="595" text-anchor="middle" font-family="Outfit" font-weight="500" font-size="19" letter-spacing="3" fill="#64748B">STAP 1</text>
+<text x="235" y="633" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="27" fill="#0B2347">Invullen — 2 min</text>
+<text x="235" y="668" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">merk + aantal palen,</text>
+<text x="235" y="695" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">meer is het niet</text>
+<rect x="435" y="390" width="330" height="330" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<rect x="435" y="390" width="330" height="10" rx="5" fill="#0B2347"/>
+<circle cx="600" cy="490" r="52" fill="#0B2347"/>
+<g transform="translate(542.8,432.8) scale(4.766666666666667)"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v4a2 2 0 0 0 2 2h4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="600" y="595" text-anchor="middle" font-family="Outfit" font-weight="500" font-size="19" letter-spacing="3" fill="#64748B">STAP 2</text>
+<text x="600" y="633" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="27" fill="#0B2347">Rapport in 48 uur</text>
+<text x="600" y="668" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">jullie eigen ERE-bedrag,</text>
+<text x="600" y="695" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">advies per laadpaal</text>
+<rect x="800" y="390" width="330" height="330" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<rect x="800" y="390" width="330" height="10" rx="5" fill="#22C55E"/>
+<circle cx="965" cy="490" r="52" fill="#22C55E"/>
+<g transform="translate(907.8,432.8) scale(4.766666666666667)"><path d="m16 3 4 4-4 4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 7H4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m8 21-4-4 4-4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17h16" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="965" y="595" text-anchor="middle" font-family="Outfit" font-weight="500" font-size="19" letter-spacing="3" fill="#64748B">STAP 3</text>
+<text x="965" y="633" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="27" fill="#0B2347">Omzetten of vervangen</text>
+<text x="965" y="668" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">jij beslist —</text>
+<text x="965" y="695" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">geen verplichting</text>
+<text x="70" y="820" font-family="Outfit" font-weight="600" font-size="26" fill="#0B2347">Wat het rapport per laadpaal zegt</text>
+<rect x="70" y="850" width="515" height="210" rx="16" fill="#DCFCE7"/>
+<g transform="translate(110,890) scale(2.4)"><path d="M21.801 10A10 10 0 1 1 17 3.335" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 11 3 3L22 4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="190" y="915" font-family="Outfit" font-weight="600" font-size="24" fill="#15803D">OCPP + MID-meter?</text>
+<text x="190" y="950" font-family="Inter" font-size="19" fill="#166534">Gratis op afstand omgezet — geen monteur,</text>
+<text x="190" y="977" font-family="Inter" font-size="19" fill="#166534">geen nieuwe hardware. Verdient direct ERE.</text>
+<rect x="615" y="850" width="515" height="210" rx="16" fill="#FEF3C7"/>
+<g transform="translate(655,890) scale(2.4)"><path d="m17 2 4 4-4 4" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11v-1a4 4 0 0 1 4-4h14" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m7 22-4-4 4-4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 13v1a4 4 0 0 1-4 4H3" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="735" y="915" font-family="Outfit" font-weight="600" font-size="24" fill="#B45309">Geen MID-meter?</text>
+<text x="735" y="950" font-family="Inter" font-size="19" fill="#92400E">Vervangen vóór er ERE-geld kan stromen —</text>
+<text x="735" y="977" font-family="Inter" font-size="19" fill="#92400E">de scan vertelt je precies welke palen.</text>
+<rect x="70" y="1110" width="1060" height="150" rx="16" fill="#0B2347"/>
+<text x="600" y="1172" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="32" fill="#38BDF8">Gratis · 2 minuten · geen monteur · geen verplichting</text>
+<text x="600" y="1216" text-anchor="middle" font-family="Inter" font-size="21" fill="#B8D4EE">"Onze palen zijn te oud" horen we vaak — klopt meestal niet.</text>
+<rect y="1326" width="1200" height="74" fill="#0B2347"/>
+<g transform="translate(60,1340) scale(1.375)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="120" y="1372" font-family="Outfit" font-weight="600" font-size="22" fill="#FFFFFF">chargecontrol.ai</text>
+<text x="1140" y="1372" text-anchor="end" font-family="Inter" font-size="18" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="1320" width="1200" height="6" fill="url(#bar)"/>
+</svg>

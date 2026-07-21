@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="euroFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.30"/><stop offset="100%" stop-color="#22C55E" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1200" fill="url(#bgNavy)"/>
+<g transform="translate(740,640) scale(28.125)" opacity="0.05">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<g transform="translate(80,76) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="176" y="126" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+
+<text x="80" y="310" font-family="Outfit" font-weight="500" font-size="26" letter-spacing="5" fill="#38BDF8">MYTHBUSTER</text>
+<text x="80" y="410" font-family="Outfit" font-weight="600" font-size="60" font-style="italic" fill="#94A3B8">"Onze laadpalen zijn</text>
+<text x="80" y="486" font-family="Outfit" font-weight="600" font-size="60" font-style="italic" fill="#94A3B8">te oud om mee te doen."</text>
+<line x1="78" y1="390" x2="960" y2="466" stroke="#EF4444" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+<text x="80" y="600" font-family="Outfit" font-weight="700" font-size="64" fill="#FFFFFF">Klopt meestal niet.</text>
+<rect x="80" y="670" width="1040" height="250" rx="24" fill="#FFFFFF" opacity="0.07"/>
+<rect x="80" y="670" width="12" height="250" rx="6" fill="#22C55E"/>
+<text x="140" y="746" font-family="Outfit" font-weight="600" font-size="34" fill="#22C55E">OCPP + MID-meter?</text>
+<text x="140" y="806" font-family="Inter" font-size="27" fill="#E0F2FE">Dan zetten we je paal gratis op afstand om — geen monteur,</text>
+<text x="140" y="848" font-family="Inter" font-size="27" fill="#E0F2FE">geen nieuwe hardware. Vanaf dat moment verdient hij ERE-geld.</text>
+<text x="80" y="990" font-family="Inter" font-size="26" fill="#7DD3FC">De scan vertelt je per paal wat kan.</text>
+<rect y="1184" width="1200" height="16" fill="url(#bar)"/>
+<text x="80" y="1148" font-family="Outfit" font-weight="600" font-size="26" fill="#FFFFFF">Gratis scan · 2 minuten</text>
+<text x="1120" y="1148" text-anchor="end" font-family="Inter" font-size="24" fill="#7DD3FC">chargecontrol.ai</text>
+</svg>
