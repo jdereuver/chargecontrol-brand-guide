@@ -9,8 +9,9 @@
  * Design rules (every icon MUST follow these — no exceptions):
  *   - 24x24 viewBox, geometry drawn on the 24px grid with ~2px padding.
  *   - stroke 2, round caps + round joins, no fills except deliberate accent fills.
- *   - Primary variant: navy #0B2347 strokes; ONE cyan #0EA5E9 accent element max
- *     (the "energy" element: bolt, arrow, wave, pulse or highlight dot).
+ *   - Primary variant: navy #0B2347 strokes; cyan #0EA5E9 is reserved for ONE
+ *     accent concept per icon (the "energy" element: bolt, arrow, wave, pulse
+ *     or highlight/node dots — a group of dots counts as one concept).
  *   - White-on-dark variant: navy -> white, cyan accent STAYS cyan.
  *   - Charge/energy motif = the small filled zap via the bolt() helper below.
  *     NEVER redraw or approximate the ChargeControl logo (broken-ring arc + bolt)
