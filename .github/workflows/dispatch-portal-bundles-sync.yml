@@ -1,0 +1,50 @@
+# Task #4911 (installed from the ChargeControl workspace by
+# scripts/install-brand-guide-dispatch-workflow.mjs — edit THERE, not here).
+#
+# Fires a repository_dispatch at ChargeControl-ai/Portal whenever a push to main touches
+# assets/**, so the Portal repo's "Brand Guide Bundle Sync (auto-heal)" workflow
+# (.github/workflows/brand-guide-bundles-sync.yml, Task #4908) runs within
+# minutes of a direct edit in this repo instead of waiting for its 6-hour
+# schedule. Publishes from the workspace already run the healed check as their
+# last step; this closes the manual-edit window.
+#
+# Secret: PORTAL_DISPATCH_TOKEN — PAT able to POST /dispatches on ChargeControl-ai/Portal.
+
+name: Notify Portal of asset push
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/**'
+
+permissions: {}
+
+concurrency:
+  group: notify-portal-bundles-sync
+  cancel-in-progress: true
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fire repository_dispatch at ChargeControl-ai/Portal
+        env:
+          TOKEN: ${{ secrets.PORTAL_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::PORTAL_DISPATCH_TOKEN secret is not set in this repo."
+            exit 1
+          fi
+          status=$(curl -sS -o /tmp/resp.txt -w '%{http_code}' \
+            -X POST "https://api.github.com/repos/ChargeControl-ai/Portal/dispatches" \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -d '{"event_type":"brand-guide-assets-push","client_payload":{"repo":"jdereuver/chargecontrol-brand-guide","sha":"'"$GITHUB_SHA"'","ref":"'"$GITHUB_REF"'"}}')
+          if [ "$status" != "204" ]; then
+            echo "::error::repository_dispatch failed with HTTP $status"
+            cat /tmp/resp.txt
+            exit 1
+          fi
+          echo "Dispatched brand-guide-assets-push to ChargeControl-ai/Portal for $GITHUB_SHA"
