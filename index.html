@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>ChargeControl Brand Guidelines</title>
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cyan:#0EA5E9; --navy:#0B2347; --dark-bg:#071120; --light:#F5F9FC;
+  --muted:#5B6B7F; --border:#E2E8F0; --card:#FFFFFF; --bg:#F8FAFC;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--navy);line-height:1.6}
+h1,h2,h3,h4{font-family:'Outfit',sans-serif}
+code,.mono{font-family:'JetBrains Mono',monospace}
+.container{max-width:1000px;margin:0 auto;padding:0 24px}
+header.hero{background:linear-gradient(135deg,var(--navy) 0%,#0A1628 100%);color:#fff;padding:64px 0 56px}
+header.hero .logo-row{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+header.hero h1{font-size:2.4rem;font-weight:700;letter-spacing:-0.02em}
+header.hero p{color:#9FB3C8;max-width:640px;margin-top:12px;font-size:1.05rem}
+.accent-bar{height:4px;background:linear-gradient(90deg,var(--cyan) 0%,rgba(14,165,233,.25) 70%,transparent 100%)}
+nav.toc{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;overflow-x:auto}
+nav.toc .container{display:flex;gap:4px;padding:0 16px}
+nav.toc a{white-space:nowrap;padding:14px 12px;font-size:.85rem;font-weight:500;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent}
+nav.toc a:hover{color:var(--cyan);border-bottom-color:var(--cyan)}
+section{padding:56px 0;border-bottom:1px solid var(--border)}
+section h2{font-size:1.7rem;font-weight:700;margin-bottom:8px}
+section h2 .num{color:var(--cyan);margin-right:8px}
+section .lead{color:var(--muted);margin-bottom:28px;max-width:720px}
+h3{font-size:1.1rem;font-weight:600;margin:28px 0 12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.logo-tile{border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.logo-tile .preview{display:flex;align-items:center;justify-content:center;padding:36px 20px;min-height:150px}
+.logo-tile .label{padding:12px 16px;border-top:1px solid var(--border);background:#fff;font-size:.82rem}
+.logo-tile .label strong{display:block;font-weight:600}
+.logo-tile .label span{color:var(--muted);font-size:.76rem}
+.bg-white{background:#fff}.bg-navy{background:var(--navy)}.bg-dark{background:var(--dark-bg)}.bg-cyan{background:var(--cyan)}.bg-lightgrid{background:#fff;background-image:linear-gradient(#f1f5f9 1px,transparent 1px),linear-gradient(90deg,#f1f5f9 1px,transparent 1px);background-size:16px 16px}
+.swatch{border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.swatch .color{height:96px}
+.swatch .info{padding:12px 14px;background:#fff;font-size:.8rem}
+.swatch .info strong{display:block;font-weight:600;font-size:.86rem}
+.swatch .info code{font-size:.74rem;color:var(--muted);display:block;margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+th{text-align:left;background:var(--navy);color:#fff;padding:10px 14px;font-family:'Outfit',sans-serif;font-weight:600;font-size:.82rem}
+td{padding:10px 14px;border-top:1px solid var(--border);vertical-align:top}
+td code{font-size:.78rem;background:#F1F5F9;padding:1px 6px;border-radius:4px}
+.type-specimen{background:#fff;border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:16px}
+.type-specimen .tag{font-size:.72rem;font-weight:600;color:var(--cyan);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;font-family:'Inter',sans-serif}
+.rule-list{list-style:none}
+.rule-list li{padding:10px 0 10px 28px;position:relative;border-bottom:1px solid var(--border)}
+.rule-list li:last-child{border-bottom:none}
+.rule-list li::before{content:"";position:absolute;left:4px;top:17px;width:10px;height:10px;border-radius:3px;background:var(--cyan)}
+.rule-list li.dont::before{background:#EF4444}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+a.dl{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--navy);font-size:.85rem;transition:border-color .15s}
+a.dl:hover{border-color:var(--cyan)}
+a.dl .thumb{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:#F1F5F9;flex-shrink:0}
+a.dl .thumb.dark{background:var(--navy)}
+a.dl img{max-width:32px;max-height:32px}
+a.dl strong{display:block;font-weight:600}
+a.dl span{color:var(--muted);font-size:.74rem}
+.pill{display:inline-block;background:rgba(14,165,233,.1);color:var(--cyan);font-size:.72rem;font-weight:600;padding:2px 10px;border-radius:99px;margin-left:8px;vertical-align:middle}
+.email-mock{max-width:480px;margin:0 auto;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(11,35,71,.08)}
+.email-mock .eh{padding:20px 24px;border-bottom:3px solid var(--cyan);display:flex;align-items:center;gap:10px}
+.email-mock .eb{padding:24px}
+.email-mock .eb p{font-size:.88rem;color:#334155;margin-bottom:16px}
+.email-mock .cta{display:inline-block;background:var(--cyan);color:#fff;font-weight:600;font-size:.88rem;padding:10px 24px;border-radius:8px;text-decoration:none}
+.email-mock .ef{padding:16px 24px;background:#F8FAFC;border-top:1px solid var(--border);font-size:.74rem;color:var(--muted)}
+.sparky-bolt{width:72px;height:72px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--cyan),#0284C7);border-radius:20px;box-shadow:0 6px 18px rgba(14,165,233,.35)}
+footer{padding:40px 0 60px;color:var(--muted);font-size:.82rem;text-align:center}
+@media(max-width:640px){header.hero h1{font-size:1.7rem}section{padding:40px 0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="logo-row">
+      <svg width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round"/>
+        <path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+        <path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+      </svg>
+      <span style="font-family:'Outfit',sans-serif;font-weight:600;font-size:1.5rem">Charge<span style="color:var(--cyan)">Control</span></span>
+    </div>
+    <h1>Brand Guidelines</h1>
+    <p>The single source of truth for the ChargeControl brand identity — logo system, color palette, typography, mascot, email branding, and partner co-branding rules.</p>
+  </div>
+</header>
+<div class="accent-bar"></div>
+
+<nav class="toc"><div class="container">
+  <a href="#logo">Logo</a>
+  <a href="#color">Color</a>
+  <a href="#type">Typography</a>
+  <a href="#icons">Icons</a>
+  <a href="#sparky">Sparky</a>
+  <a href="#naming">Naming</a>
+  <a href="#email">Email</a>
+  <a href="#cobrand">Co-branding</a>
+  <a href="#downloads">Downloads</a>
+</div></nav>
+
+<main class="container">
+
+<section id="logo">
+  <h2><span class="num">01</span>Logo System</h2>
+  <p class="lead">The mark is a <strong>broken-ring "C"</strong> built from two arcs plus a <strong>lightning bolt</strong>. Never redraw it — always use the exact canonical paths or the ready-made files below.</p>
+
+  <div class="grid grid-2">
+    <div class="logo-tile">
+      <div class="preview bg-lightgrid"><img src="assets/logo-full.svg" alt="ChargeControl full lockup" style="width:260px"></div>
+      <div class="label"><strong>Primary lockup</strong><span>Cyan + navy mark with Outfit 600 wordmark — default on light backgrounds</span></div>
+    </div>
+    <div class="logo-tile">
+      <div class="preview bg-navy"><img src="assets/logo-full-white.svg" alt="ChargeControl white lockup" style="width:260px"></div>
+      <div class="label"><strong>Monochrome white lockup</strong><span>For dark / navy backgrounds</span></div>
+    </div>
+  </div>
+
+  <h3>Icon variants</h3>
+  <div class="grid grid-4">
+    <div class="logo-tile">
+      <div class="preview bg-lightgrid"><img src="assets/icon.svg" alt="Primary icon" width="72" height="72"></div>
+      <div class="label"><strong>Primary</strong><span>Cyan + navy</span></div>
+    </div>
+    <div class="logo-tile">
+      <div class="preview bg-navy"><img src="assets/icon-white.svg" alt="White icon" width="72" height="72"></div>
+      <div class="label"><strong>White</strong><span>Dark backgrounds</span></div>
+    </div>
+    <div class="logo-tile">
+      <div class="preview bg-white"><img src="assets/icon-navy.svg" alt="Navy icon" width="72" height="72"></div>
+      <div class="label"><strong>Navy</strong><span>Monochrome light</span></div>
+    </div>
+    <div class="logo-tile">
+      <div class="preview bg-dark"><img src="assets/icon-cyan.svg" alt="Cyan icon" width="72" height="72"></div>
+      <div class="label"><strong>Cyan</strong><span>Monochrome accent</span></div>
+    </div>
+  </div>
+
+  <h3>Construction spec</h3>
+  <table>
+    <tr><th>Element</th><th>Spec</th></tr>
+    <tr><td>Cyan arc</td><td><code>M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716</code> · stroke <code>#0EA5E9</code></td></tr>
+    <tr><td>Navy arc</td><td><code>M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2</code> · stroke <code>#0B2347</code></td></tr>
+    <tr><td>Bolt</td><td><code>M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z</code> · fill <code>#0EA5E9</code></td></tr>
+    <tr><td>Stroke</td><td>width <strong>5</strong>, linecap <strong>round</strong> — never 6 / butt</td></tr>
+    <tr><td>ViewBox</td><td><code>0 0 32 32</code> (icon) · full lockup <code>0 0 200 40</code>, wordmark at x=44</td></tr>
+    <tr><td>Wordmark</td><td>"ChargeControl" in <strong>Outfit 600</strong>, fill <code>#0B2347</code> (white on dark)</td></tr>
+  </table>
+
+  <h3>Rules</h3>
+  <ul class="rule-list card" style="padding:8px 24px">
+    <li>Copy the exact canonical paths or use the downloadable assets — never redraw the mark.</li>
+    <li>Approved variants only: primary (cyan+navy), monochrome white, monochrome navy, monochrome cyan.</li>
+    <li class="dont">Never omit the bolt, change stroke width or caps, or recolor outside the approved variants.</li>
+    <li class="dont">Never invent a plain-bolt logo — the ring + bolt combination <em>is</em> the mark.</li>
+    <li class="dont">Never recolor the ChargeControl mark with partner colors.</li>
+  </ul>
+</section>
+
+<section id="color">
+  <h2><span class="num">02</span>Color Palette</h2>
+  <p class="lead">Electric Cyan is the primary brand color, paired with Deep Navy ink. <code>--primary</code> is identical in light and dark mode. In product UI, always consume colors via design tokens — never hardcode hex.</p>
+
+  <div class="grid grid-3">
+    <div class="swatch"><div class="color" style="background:#0EA5E9"></div><div class="info"><strong>Brand Cyan — Primary</strong><code>#0EA5E9 · HSL 199 89% 48%</code><code>CTAs, links, accents, bolt</code></div></div>
+    <div class="swatch"><div class="color" style="background:#0B2347"></div><div class="info"><strong>Brand Navy — Ink</strong><code>#0B2347 · HSL 216 73% 16%</code><code>Headings, wordmark, dark arc</code></div></div>
+    <div class="swatch"><div class="color" style="background:#FFFFFF;border-bottom:1px solid var(--border)"></div><div class="info"><strong>Background (light)</strong><code>#FFFFFF · HSL 0 0% 100%</code><code>Page background</code></div></div>
+    <div class="swatch"><div class="color" style="background:#071120"></div><div class="info"><strong>Background (dark)</strong><code>~#071120 · HSL 216 60% 7%</code><code>Dark-mode page background</code></div></div>
+    <div class="swatch"><div class="color" style="background:#F5F9FC;border-bottom:1px solid var(--border)"></div><div class="info"><strong>Foreground (dark mode)</strong><code>~#F5F9FC · HSL 210 40% 98%</code><code>Dark-mode text</code></div></div>
+    <div class="swatch"><div class="color" style="background:#DDE5EF"></div><div class="info"><strong>Accent (light)</strong><code>HSL 214 32% 91%</code><code>Subtle fills, borders</code></div></div>
+    <div class="swatch"><div class="color" style="background:#16A34A"></div><div class="info"><strong>Success</strong><code>HSL 142 76% 36%</code><code>Positive states</code></div></div>
+    <div class="swatch"><div class="color" style="background:#F59E0B"></div><div class="info"><strong>Warning</strong><code>HSL 38 92% 50%</code><code>Caution states</code></div></div>
+    <div class="swatch"><div class="color" style="background:#EF4444"></div><div class="info"><strong>Destructive</strong><code>HSL 0 84% 60%</code><code>Errors, destructive actions</code></div></div>
+  </div>
+
+  <div class="card" style="margin-top:20px;border-left:4px solid #EF4444">
+    <strong>Legacy blue <code style="background:#F1F5F9;padding:1px 6px;border-radius:4px">#2563eb</code> is NOT a brand color.</strong>
+    <p style="color:var(--muted);font-size:.88rem;margin-top:6px">All branded surfaces were migrated to <code style="background:#F1F5F9;padding:1px 6px;border-radius:4px">#0EA5E9</code>. Do not reintroduce it (a few white-label <em>defaults</em> still use it as a neutral placeholder only).</p>
+  </div>
+
+  <h3>Gradients</h3>
+  <div class="grid grid-3">
+    <div class="swatch"><div class="color" style="background:linear-gradient(135deg,#0EA5E9 0%,#0B2347 100%)"></div><div class="info"><strong>Primary gradient</strong><code>135° · #0EA5E9 → #0B2347</code></div></div>
+    <div class="swatch"><div class="color" style="background:linear-gradient(135deg,#0B2347 0%,#0A1628 100%)"></div><div class="info"><strong>Dark gradient</strong><code>135° · #0B2347 → #0A1628</code></div></div>
+    <div class="swatch"><div class="color" style="background:linear-gradient(180deg,#FFFFFF 0%,#F8FAFC 100%);border-bottom:1px solid var(--border)"></div><div class="info"><strong>Subtle gradient (light)</strong><code>180° · #FFFFFF → #F8FAFC</code></div></div>
+  </div>
+</section>
+
+<section id="type">
+  <h2><span class="num">03</span>Typography</h2>
+  <p class="lead">Three typefaces loaded via Google Fonts: Outfit for headings and the wordmark, Inter for body and UI, JetBrains Mono for code and numerics.</p>
+
+  <div class="type-specimen">
+    <div class="tag">Outfit — Headings &amp; wordmark · weights 400–800 (wordmark uses 600)</div>
+    <div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:2.2rem;letter-spacing:-0.02em">The energy operating system</div>
+    <div style="font-family:'Outfit',sans-serif;font-weight:600;font-size:1.4rem;color:var(--cyan);margin-top:6px">for electric fleets</div>
+    <div style="font-family:'Outfit',sans-serif;font-weight:400;font-size:1rem;color:var(--muted);margin-top:10px">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
+  </div>
+
+  <div class="type-specimen">
+    <div class="tag">Inter — Body &amp; UI · weights 400–700</div>
+    <div style="font-size:1rem">ChargeControl unifies EV charging, home energy management, virtual power plants, energy trading and sustainable mobility into one intelligent platform.</div>
+    <div style="font-size:.88rem;color:var(--muted);margin-top:10px">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 — <strong>bold</strong>, <em>italic</em>, regular</div>
+  </div>
+
+  <div class="type-specimen">
+    <div class="tag">JetBrains Mono — Code &amp; numeric · weights 400–600</div>
+    <div class="mono" style="font-size:.95rem">--primary: 199 89% 48%;&nbsp;&nbsp;kWh: 1,234.56&nbsp;&nbsp;€ 325.000</div>
+    <div class="mono" style="font-size:.82rem;color:var(--muted);margin-top:10px">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</div>
+  </div>
+</section>
+
+<section id="icons">
+  <h2><span class="num">04</span>Favicons &amp; App Icons</h2>
+  <p class="lead">The canonical mark (arcs + bolt, stroke 5 round) at every size — favicon, PWA and iOS app icons, and the inline email logo all derive from the same paths.</p>
+  <div class="grid grid-4">
+    <div class="logo-tile"><div class="preview bg-lightgrid"><img src="assets/icon.svg" width="32" height="32" alt="Favicon 32"></div><div class="label"><strong>Favicon</strong><span>SVG, 32×32</span></div></div>
+    <div class="logo-tile"><div class="preview bg-lightgrid"><img src="assets/icon-192.png" width="96" height="96" alt="Icon 192"></div><div class="label"><strong>PWA icon</strong><span>PNG, 192×192</span></div></div>
+    <div class="logo-tile"><div class="preview bg-lightgrid"><img src="assets/icon-512.png" width="120" height="120" alt="Icon 512"></div><div class="label"><strong>App icon</strong><span>PNG, 512×512</span></div></div>
+    <div class="logo-tile"><div class="preview bg-navy"><img src="assets/icon-white-512.png" width="120" height="120" alt="White icon 512"></div><div class="label"><strong>White app icon</strong><span>PNG, 512×512</span></div></div>
+  </div>
+</section>
+
+<section id="sparky">
+  <h2><span class="num">05</span>Sparky Mascot</h2>
+  <p class="lead">Sparky is the AI assistant / copilot mascot, appearing in wizards, onboarding and marketing. "Sparky AI advisor" is an approved marketing term.</p>
+  <div class="card" style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+    <div class="sparky-bolt">
+      <svg width="40" height="40" viewBox="0 0 32 32" fill="none"><path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/></svg>
+    </div>
+    <div style="flex:1;min-width:260px">
+      <ul class="rule-list" style="border:none">
+        <li>The <strong>classic design is the lightning bolt</strong> — 50+ designs and 9 color variants exist in the design system.</li>
+        <li>The <strong>corporate</strong> design is the premium platform mascot.</li>
+        <li>The <strong>founder avatar</strong> variant is the default guide for B2B / B2B2C users.</li>
+        <li>Sparky appears as a copilot in wizards, in onboarding flows, and in marketing material.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="naming">
+  <h2><span class="num">06</span>Naming Rules</h2>
+  <p class="lead">Product and company naming rules for all user-facing and marketing copy.</p>
+  <ul class="rule-list card" style="padding:8px 24px">
+    <li>User-facing copy must say <strong>"Home Energy Hub"</strong> or <strong>"the Hub"</strong> — never the internal abbreviation.</li>
+    <li>Use <strong>"P1 dongle"</strong> only for generic third-party hardware, not for the Home Energy Hub.</li>
+    <li><strong>ChargeBack</strong> (capital C, capital B) is the reimbursement product — never use it to mean a payment-dispute "chargeback".</li>
+    <li>Company name: <strong>ChargeControl B.V.</strong></li>
+    <li>Taglines: <em>"The energy operating system for electric fleets"</em> (email) · <em>"The Intelligent Energy Platform"</em> (footer).</li>
+    <li class="dont">Legacy pre-rebrand product and company names are banned in all copy — internal codenames never appear in anything user-facing.</li>
+  </ul>
+</section>
+
+<section id="email">
+  <h2><span class="num">07</span>Email Branding</h2>
+  <p class="lead">All outgoing email uses one shared branded layout: a 600px card with logo + wordmark header, cyan CTA buttons, light/dark mode support and a © ChargeControl B.V. footer.</p>
+  <div class="email-mock">
+    <div class="eh">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round"/><path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#0B2347" stroke-width="5" stroke-linecap="round"/><path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/></svg>
+      <span style="font-family:'Outfit',sans-serif;font-weight:600;font-size:1.05rem">Charge<span style="color:var(--cyan)">Control</span></span>
+    </div>
+    <div class="eb">
+      <p><strong>Hi there,</strong></p>
+      <p>This is what a branded ChargeControl email looks like — brand cyan accents, Deep Navy headings, and a single clear call to action.</p>
+      <a class="cta" href="#email" onclick="return false">Open dashboard</a>
+    </div>
+    <div class="ef">© ChargeControl B.V. · <em>The energy operating system for electric fleets</em></div>
+  </div>
+  <table style="margin-top:24px">
+    <tr><th>Element</th><th>Spec</th></tr>
+    <tr><td>Brand primary</td><td><code>#0EA5E9</code> — CTA buttons in light <em>and</em> dark mode</td></tr>
+    <tr><td>Brand dark</td><td><code>#0B2347</code> — headings, footer text</td></tr>
+    <tr><td>Layout</td><td>600px card, logo + wordmark header, light/dark CSS, © footer</td></tr>
+    <tr><td>Signature</td><td>Name · title, email/phone, chargecontrol.ai link, italic tagline</td></tr>
+    <tr><td>Localization</td><td>Invite emails localized in EN / NL / DE / FR</td></tr>
+  </table>
+</section>
+
+<section id="cobrand">
+  <h2><span class="num">08</span>Partner / Sub-brand Co-branding</h2>
+  <p class="lead">ChargeControl supports partner-branded experiences (automotive, leasing and energy partners each with their own palette and logo), with strict boundaries.</p>
+  <ul class="rule-list card" style="padding:8px 24px">
+    <li>Partner colors apply to <strong>their scoped surfaces only</strong> — ChargeControl chrome keeps the canonical palette.</li>
+    <li>Text colors on partner surfaces are derived automatically for contrast safety — readable text is computed from the partner primary color.</li>
+    <li>White-label flows may carry a partner logo and primary-color override.</li>
+    <li class="dont">Never recolor the ChargeControl mark with partner colors.</li>
+  </ul>
+</section>
+
+<section id="downloads" style="border-bottom:none">
+  <h2><span class="num">09</span>Download Brand Assets</h2>
+  <p class="lead">Ready-to-use canonical files. Prefer the SVGs where the Outfit font is available — PNG lockups render the wordmark with a system-font fallback.</p>
+  <div class="dl-grid">
+    <a class="dl" href="assets/logo-full.svg" download><span class="thumb"><img src="assets/icon.svg" alt=""></span><span><strong>logo-full.svg</strong><span>Primary lockup · SVG</span></span></a>
+    <a class="dl" href="assets/logo-full-white.svg" download><span class="thumb dark"><img src="assets/icon-white.svg" alt=""></span><span><strong>logo-full-white.svg</strong><span>White lockup · SVG</span></span></a>
+    <a class="dl" href="assets/icon.svg" download><span class="thumb"><img src="assets/icon.svg" alt=""></span><span><strong>icon.svg</strong><span>Primary icon · SVG</span></span></a>
+    <a class="dl" href="assets/icon-white.svg" download><span class="thumb dark"><img src="assets/icon-white.svg" alt=""></span><span><strong>icon-white.svg</strong><span>White icon · SVG</span></span></a>
+    <a class="dl" href="assets/icon-navy.svg" download><span class="thumb"><img src="assets/icon-navy.svg" alt=""></span><span><strong>icon-navy.svg</strong><span>Navy icon · SVG</span></span></a>
+    <a class="dl" href="assets/icon-cyan.svg" download><span class="thumb dark"><img src="assets/icon-cyan.svg" alt=""></span><span><strong>icon-cyan.svg</strong><span>Cyan icon · SVG</span></span></a>
+    <a class="dl" href="assets/logo-full-800.png" download><span class="thumb"><img src="assets/icon.svg" alt=""></span><span><strong>logo-full-800.png</strong><span>Lockup · PNG 800px</span></span></a>
+    <a class="dl" href="assets/logo-full-white-800.png" download><span class="thumb dark"><img src="assets/icon-white.svg" alt=""></span><span><strong>logo-full-white-800.png</strong><span>White lockup · PNG 800px</span></span></a>
+    <a class="dl" href="assets/icon-192.png" download><span class="thumb"><img src="assets/icon-192.png" alt="" width="28"></span><span><strong>icon-192.png</strong><span>PWA icon · PNG</span></span></a>
+    <a class="dl" href="assets/icon-512.png" download><span class="thumb"><img src="assets/icon-512.png" alt="" width="28"></span><span><strong>icon-512.png</strong><span>App icon · PNG</span></span></a>
+    <a class="dl" href="assets/icon-white-512.png" download><span class="thumb dark"><img src="assets/icon-white-512.png" alt="" width="28"></span><span><strong>icon-white-512.png</strong><span>White app icon · PNG</span></span></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © ChargeControl B.V. — Brand Guidelines · <em>The Intelligent Energy Platform</em>
+  </div>
+</footer>
+
+</body>
+</html>
