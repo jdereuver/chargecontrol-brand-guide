@@ -1,16 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" width="820" height="312">
 <defs>
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0A1628"/><stop offset="55%" stop-color="#0B2347"/><stop offset="100%" stop-color="#0A1628"/></linearGradient>
-<radialGradient id="glow" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.22"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></radialGradient>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
 </defs>
-<rect width="820" height="312" fill="url(#bg)"/>
-<rect width="820" height="312" fill="url(#glow)"/>
-<g transform="translate(73.8,87.36) scale(4.29)">
+<rect width="820" height="312" fill="url(#bgNavy)"/>
+<g transform="translate(545.4399999999999,-47.424000000000035) scale(15.600000000000001)" opacity="0.06">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<g transform="rotate(-18 410 156)"><rect x="-164" y="193.44" width="1148" height="49.92" fill="url(#beam)"/></g>
+<g transform="translate(57.400000000000006,84.24) scale(4.485)">
 <path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
 <path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
 <path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
 </g>
-<text x="248.51999999999998" y="156" font-family="Outfit, sans-serif" font-weight="600" font-size="59.28" fill="#FFFFFF">ChargeControl</text>
-<text x="248.51999999999998" y="205.92000000000002" font-family="Outfit, sans-serif" font-weight="500" font-size="23.4" fill="#7DD3FC">The Intelligent Energy Platform</text>
-<rect y="306" width="820" height="6" fill="#0EA5E9"/>
+<text x="244.60000000000002" y="162.24" font-family="Outfit, sans-serif" font-weight="700" font-size="62.400000000000006" fill="#FFFFFF">ChargeControl</text>
+<text x="244.60000000000002" y="212.16000000000003" font-family="Outfit, sans-serif" font-weight="500" font-size="19.344" letter-spacing="3.744" fill="#38BDF8">THE INTELLIGENT ENERGY PLATFORM</text>
+<rect y="304" width="820" height="8" fill="url(#bar)"/>
 </svg>
