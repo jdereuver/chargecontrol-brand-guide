@@ -20,6 +20,20 @@ the latest commit, restamps all references idempotently (static refs, meta/og
 tags, downloads, and the JS `STOCK` grid via per-entry `"v"` fields), pushes
 via the GitHub API, triggers a Pages build, and polls until built.
 
+## Social assets: verification gate
+
+Whenever `assets/social/` or its generator changes, run the check BEFORE
+pushing (from the main ChargeControl workspace root, so `sharp` resolves):
+
+    node <this-checkout>/assets/social/check-social.mjs [--repo <this-checkout>]
+
+It re-runs `assets/social/generate-social.mjs` in a temp dir and fails unless
+all 10 committed SVGs are byte-identical to a fresh run (outputs are never
+hand-edited), all 10 PNGs have their exact platform dimensions, and every
+full-opacity mark/text sits inside its platform safe zone (circular profile
+crops ≤62%, LinkedIn/Facebook bottom-left overlap, X center band, YouTube
+1546×423 mobile window). It must exit 0 before the social assets are pushed.
+
 Notes:
 - Download links keep their real file extensions; the `?v=` query does not
   affect the downloaded filename.
