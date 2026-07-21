@@ -1,26 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" width="820" height="312">
 <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#1E293B"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0EA5E9"/>
-      <stop offset="100%" stop-color="#22C55E"/>
-    </linearGradient>
-  </defs>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0A1628"/><stop offset="55%" stop-color="#0B2347"/><stop offset="100%" stop-color="#0A1628"/></linearGradient>
+<radialGradient id="glow" cx="50%" cy="45%" r="60%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.22"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></radialGradient>
+</defs>
 <rect width="820" height="312" fill="url(#bg)"/>
-<rect y="287.04" width="820" height="24.96" fill="url(#accent)" opacity="0.8"/>
-<g opacity="0.06">
-  <line x1="51.25" y1="0" x2="51.25" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="102.5" y1="0" x2="102.5" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="153.75" y1="0" x2="153.75" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="205" y1="0" x2="205" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="256.25" y1="0" x2="256.25" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="307.5" y1="0" x2="307.5" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="358.75" y1="0" x2="358.75" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="410" y1="0" x2="410" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="461.25" y1="0" x2="461.25" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="512.5" y1="0" x2="512.5" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="563.75" y1="0" x2="563.75" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="615" y1="0" x2="615" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="666.25" y1="0" x2="666.25" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="717.5" y1="0" x2="717.5" y2="312" stroke="#0EA5E9" stroke-width="1"/><line x1="768.75" y1="0" x2="768.75" y2="312" stroke="#0EA5E9" stroke-width="1"/>
+<rect width="820" height="312" fill="url(#glow)"/>
+<g transform="translate(73.8,87.36) scale(4.29)">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
 </g>
-<g transform="translate(65.6,156)">
-  <g transform="scale(1.56)">
-    <path d="M0,-12 C14,-12 13,2 11,7" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
-    <path d="M8,11 C2,13 -10,13 -12,3 C-13,-5 -9,-11 -3,-12" stroke="white" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9"/>
-    <path d="M1.5,-7 L-3,1 L0.5,1 L-0.5,7 L4,-1 L1,-1 Z" fill="#0EA5E9"/>
-  </g>
-</g>
-<text x="174.79999999999998" y="149.76" font-family="system-ui,-apple-system,sans-serif" font-size="43.68000000000001" font-weight="700" fill="white">ChargeControl</text>
-<text x="174.79999999999998" y="193.44" font-family="system-ui,-apple-system,sans-serif" font-size="20.28" fill="#0EA5E9" opacity="0.9">Smart Energy Management Platform</text>
+<text x="248.51999999999998" y="156" font-family="Outfit, sans-serif" font-weight="600" font-size="59.28" fill="#FFFFFF">ChargeControl</text>
+<text x="248.51999999999998" y="205.92000000000002" font-family="Outfit, sans-serif" font-weight="500" font-size="23.4" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="306" width="820" height="6" fill="#0EA5E9"/>
 </svg>
