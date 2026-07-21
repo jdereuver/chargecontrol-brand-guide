@@ -1,23 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
-<defs>
-<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
-<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
-<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
-<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
-</defs>
-<rect width="1500" height="500" fill="url(#bgNavy)"/>
-<g transform="translate(1060,-76) scale(25)" opacity="0.06">
-<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
-<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
-<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
-</g>
-<g transform="rotate(-18 750 250)"><rect x="-300" y="310" width="2100" height="80" fill="url(#beam)"/></g>
-<g transform="translate(105.00000000000001,135) scale(7.1875)">
+<defs><radialGradient id="xbg" cx="50%" cy="50%" r="75%"><stop offset="0%" stop-color="#0C2247"/><stop offset="100%" stop-color="#070F1F"/></radialGradient>
+<linearGradient id="xline" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.8"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient></defs>
+<rect width="1500" height="500" fill="url(#xbg)"/>
+<rect x="150" y="248" width="1200" height="4" fill="url(#xline)"/>
+<g transform="translate(405,190) scale(3.75)">
 <path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
 <path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
 <path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
 </g>
-<text x="405" y="260" font-family="Outfit, sans-serif" font-weight="700" font-size="100" fill="#FFFFFF">ChargeControl</text>
-<text x="405" y="340" font-family="Outfit, sans-serif" font-weight="500" font-size="31" letter-spacing="6" fill="#38BDF8">THE INTELLIGENT ENERGY PLATFORM</text>
-<rect y="489" width="1500" height="11" fill="url(#bar)"/>
+<text x="550" y="274" font-family="Outfit, sans-serif" font-weight="700" font-size="68" fill="#FFFFFF">ChargeControl</text>
+<text x="750" y="344" font-family="Outfit, sans-serif" font-weight="500" font-size="24" letter-spacing="5" text-anchor="middle" fill="#38BDF8">THE INTELLIGENT ENERGY PLATFORM</text>
 </svg>
