@@ -365,6 +365,12 @@
    "existing": false
   },
   {
+   "slug": "calculator",
+   "domain": "payments",
+   "label": "Calculator",
+   "existing": false
+  },
+  {
    "slug": "chargeback",
    "domain": "payments",
    "label": "ChargeBack",

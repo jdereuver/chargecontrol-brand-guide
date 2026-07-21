@@ -247,6 +247,12 @@ const NEW = [
   ['payout', 'payments', 'Payout', [
     R(2, 7, 20, 10, 2), C(12, 12, 2.6, { accent: true }), C(5.8, 12, 0.6, { fill: true }), C(18.2, 12, 0.6, { fill: true }),
   ]],
+  ['calculator', 'payments', 'Calculator', [
+    R(6, 2, 12, 20, 2), L(9, 6.5, 15, 6.5),
+    C(9.5, 11, 0.9, { fill: true }), C(14.5, 11, 0.9, { fill: true }),
+    C(9.5, 14.5, 0.9, { fill: true }), C(14.5, 14.5, 0.9, { fill: true }),
+    L(9, 18.5, 15, 18.5, { accent: true }),
+  ]],
   ['billing-cycle', 'payments', 'Billing Cycle', [
     R(3, 4, 18, 17, 2), L(3, 9, 21, 9), L(8, 2, 8, 6), L(16, 2, 16, 6),
     P('M13.8 13.6a2.6 2.6 0 1 0 0 3.8', { accent: true }), L(10.4, 15.5, 13, 15.5, { accent: true }),
