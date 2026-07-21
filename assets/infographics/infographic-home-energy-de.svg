@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="euroFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.30"/><stop offset="100%" stop-color="#22C55E" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1400" fill="#F8FAFC"/>
+<rect width="1200" height="230" fill="url(#bgNavy)"/>
+<g transform="translate(70,62) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="168" y="112" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+<text x="72" y="168" font-family="Outfit" font-weight="500" font-size="20" letter-spacing="5" fill="#38BDF8">HOME ENERGY HUB</text>
+<text x="70" y="212" font-family="Outfit" font-weight="700" font-size="42" fill="#FFFFFF">Dein Zuhause als Kraftwerk</text>
+<text x="70" y="296" font-family="Inter" font-size="23" fill="#475569">Der Home Energy Hub verbindet Solar, Batterie, EV und das Netz —</text>
+<text x="70" y="330" font-family="Inter" font-size="23" fill="#475569">und lenkt Energie dorthin, wo sie am meisten einbringt — inklusive Vehicle-to-Grid.</text>
+<line x1="403.37606740181695" y1="537.9408031498305" x2="503.1435910296016" y2="630.3181398422238" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+<circle cx="433.30632449015235" cy="565.6540041575485" r="7" fill="#F59E0B" opacity="0.55"/><circle cx="458.2482053970985" cy="588.7483383306468" r="7" fill="#F59E0B" opacity="0.55"/><circle cx="483.1900863040447" cy="611.8426725037451" r="7" fill="#F59E0B" opacity="0.55"/>
+<path d="M503.1435910296016 630.3181398422238 L483.14181858229153 625.426402015436 L496.7299792122576 610.7511885350725 Z" fill="#F59E0B"/>
+<line x1="675.7409961600576" y1="654.7060377930537" x2="790.0218850687238" y2="556.1880301131691" stroke="#0EA5E9" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+<circle cx="710.0252628326575" cy="625.1506354890884" r="7" fill="#0EA5E9" opacity="0.55"/><circle cx="738.595485059824" cy="600.5211335691172" r="7" fill="#0EA5E9" opacity="0.55"/><circle cx="767.1657072869906" cy="575.891631649146" r="7" fill="#0EA5E9" opacity="0.55"/>
+<path d="M790.0218850687238 556.1880301131691 L782.917901980608 575.5150429264253 L769.8591095392188 560.3668436944137 Z" fill="#0EA5E9"/><path d="M675.7409961600576 654.7060377930537 L682.8449792481734 635.3790249797976 L695.9037716895626 650.5272242118092 Z" fill="#0EA5E9"/>
+<line x1="521.9131190556969" y1="782.4695047554425" x2="403.07468284648" y2="877.540253722816" stroke="#22C55E" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+<circle cx="486.26158819293187" cy="810.9907294456546" r="7" fill="#22C55E" opacity="0.55"/><circle cx="456.5519791406276" cy="834.758416687498" r="7" fill="#22C55E" opacity="0.55"/><circle cx="426.8423700883234" cy="858.5261039293413" r="7" fill="#22C55E" opacity="0.55"/>
+<path d="M403.07468284648 877.540253722816 L410.8833709409103 858.487054772406 L423.37727189199876 874.1044309612666 Z" fill="#22C55E"/><path d="M521.9131190556969 782.4695047554425 L514.1044309612666 801.5227037058525 L501.61053001017814 785.9053275169919 Z" fill="#22C55E"/>
+<line x1="679.0723707613913" y1="781.2173192991416" x2="805.6244705949634" y2="879.193138525133" stroke="#8B5CF6" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+<circle cx="717.0380007114629" cy="810.6100650669391" r="7" fill="#8B5CF6" opacity="0.55"/><circle cx="748.676025669856" cy="835.1040198734369" r="7" fill="#8B5CF6" opacity="0.55"/><circle cx="780.314050628249" cy="859.5979746799347" r="7" fill="#8B5CF6" opacity="0.55"/>
+<path d="M805.6244705949634 879.193138525133 L785.2697119279989 876.0812581274266 L797.5131757878272 860.2667839751483 Z" fill="#8B5CF6"/><path d="M679.0723707613913 781.2173192991416 L699.4271294283559 784.329199696848 L687.1836655685275 800.1436738491263 Z" fill="#8B5CF6"/>
+<circle cx="600" cy="720" r="120" fill="#0B2347"/>
+<g transform="translate(556,658) scale(2.75)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="600" y="782" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#FFFFFF">Home Energy</text>
+<text x="600" y="810" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#FFFFFF">Hub</text>
+<circle cx="330" cy="470" r="86" fill="#FFFFFF" stroke="#F59E0B" stroke-width="5"/>
+<g transform="translate(239.7,367.7) scale(7.5249999999999995)"><circle cx="12" cy="12" r="4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 2v2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 20v2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m4.93 4.93 1.41 1.41" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m17.66 17.66 1.41 1.41" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12h2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12h2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m6.34 17.66-1.41 1.41" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m19.07 4.93-1.41 1.41" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="220" y="570" width="220" height="64" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="330" y="597" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">Solar</text>
+<text x="330" y="622" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">kostenlose Produktion zuerst</text>
+<circle cx="890" cy="470" r="86" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="5"/>
+<g transform="translate(799.7,367.7) scale(7.5249999999999995)"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 17h6" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17" cy="17" r="2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="780" y="570" width="220" height="64" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="890" y="597" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">EV</text>
+<text x="890" y="622" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">Laden + V2G</text>
+<circle cx="300" cy="960" r="86" fill="#FFFFFF" stroke="#22C55E" stroke-width="5"/>
+<g transform="translate(209.7,857.7) scale(7.5249999999999995)"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m11 7-3 5h4l-3 5" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" x2="22" y1="11" y2="13" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="190" y="1060" width="220" height="64" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="300" y="1087" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">Batterie</text>
+<text x="300" y="1112" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">speichern &amp; handeln</text>
+<circle cx="910" cy="960" r="86" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="5"/>
+<g transform="translate(819.7,857.7) scale(7.5249999999999995)"><path d="M12 2v20" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 5h20" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3v2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 3v2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 3v2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 3v2" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m19 5-7 7-7-7" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect x="800" y="1060" width="220" height="64" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="910" y="1087" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">Netz</text>
+<text x="910" y="1112" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">günstig kaufen, teuer verkaufen</text>
+<rect x="70" y="1160" width="1060" height="110" rx="16" fill="#0B2347"/>
+<text x="600" y="1207" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="29" fill="#38BDF8">Vehicle-to-Grid: dein EV verdient, während er parkt</text>
+<text x="600" y="1246" text-anchor="middle" font-family="Inter" font-size="20" fill="#B8D4EE">Entladen bei Spitzenpreisen, laden wenn Energie günstig ist oder die Sonne scheint.</text>
+<rect y="1326" width="1200" height="74" fill="#0B2347"/>
+<g transform="translate(60,1340) scale(1.375)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="120" y="1372" font-family="Outfit" font-weight="600" font-size="22" fill="#FFFFFF">chargecontrol.ai</text>
+<text x="1140" y="1372" text-anchor="end" font-family="Inter" font-size="18" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="1320" width="1200" height="6" fill="url(#bar)"/>
+</svg>

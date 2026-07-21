@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="euroFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.30"/><stop offset="100%" stop-color="#22C55E" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1400" fill="#F8FAFC"/>
+<rect width="1200" height="230" fill="url(#bgNavy)"/>
+<g transform="translate(70,62) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="168" y="112" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+<text x="72" y="168" font-family="Outfit" font-weight="500" font-size="20" letter-spacing="5" fill="#38BDF8">INTELLIGENTES LADEN</text>
+<text x="70" y="212" font-family="Outfit" font-weight="700" font-size="42" fill="#FFFFFF">So spart smartes Laden Geld</text>
+<text x="90" y="290" font-family="Inter" font-weight="600" font-size="22" fill="#0B2347">Dynamischer Energiepreis über 24 Stunden — geladen wird im grünen Fenster</text>
+<rect x="156.52173913043478" y="320" width="221.7391304347826" height="420" rx="10" fill="#22C55E" opacity="0.12"/>
+<rect x="164.69565217391306" y="579.6" width="28" height="156.39999999999998" rx="6" fill="#22C55E" opacity="0.55"/><rect x="209.04347826086956" y="630" width="28" height="106" rx="6" fill="#22C55E" opacity="0.55"/><rect x="253.39130434782612" y="663.6" width="28" height="72.39999999999998" rx="6" fill="#22C55E" opacity="0.55"/><rect x="297.7391304347826" y="672" width="28" height="64" rx="6" fill="#22C55E" opacity="0.55"/>
+<path d="M90.0 479.6 L134.3 509.0 L178.7 563.6 L223.0 614.0 L267.4 647.6 L311.7 656.0 L356.1 630.8 L400.4 538.4 L444.8 437.6 L489.1 404.0 L533.5 429.2 L577.8 462.8 L622.2 496.4 L666.5 521.6 L710.9 530.0 L755.2 504.8 L799.6 454.4 L843.9 378.8 L888.3 353.6 L932.6 387.2 L977.0 437.6 L1021.3 462.8 L1065.7 488.0 L1110.0 496.4 L1110 740 L90 740 Z" fill="url(#curveFill)"/>
+<path d="M90.0 479.6 L134.3 509.0 L178.7 563.6 L223.0 614.0 L267.4 647.6 L311.7 656.0 L356.1 630.8 L400.4 538.4 L444.8 437.6 L489.1 404.0 L533.5 429.2 L577.8 462.8 L622.2 496.4 L666.5 521.6 L710.9 530.0 L755.2 504.8 L799.6 454.4 L843.9 378.8 L888.3 353.6 L932.6 387.2 L977.0 437.6 L1021.3 462.8 L1065.7 488.0 L1110.0 496.4" stroke="#0EA5E9" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="90" y1="740" x2="1110" y2="740" stroke="#94A3B8" stroke-width="2"/>
+<text x="90" y="774" font-family="JetBrains Mono" font-size="18" fill="#64748B">00:00</text>
+<text x="600" y="774" text-anchor="middle" font-family="JetBrains Mono" font-size="18" fill="#64748B">12:00</text>
+<text x="1110" y="774" text-anchor="end" font-family="JetBrains Mono" font-size="18" fill="#64748B">24:00</text>
+<rect x="156.52173913043478" y="302" width="221.7391304347826" height="44" rx="22" fill="#DCFCE7"/>
+<text x="267.39130434782606" y="331" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="20" fill="#15803D">Ladefenster — günstigste Stunden, automatisch gewählt</text>
+<circle cx="932.6086956521739" cy="387.2" r="10" fill="#FFFFFF" stroke="#EF4444" stroke-width="5"/>
+<text x="932.6086956521739" y="363.2" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="19" fill="#DC2626">Abendspitze — vermieden</text>
+<line x1="316" y1="1000" x2="498" y2="1000" stroke="#94A3B8" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 12"/>
+<path d="M514 1000 l-20 -11 v22 z" fill="#94A3B8"/>
+<line x1="686" y1="1000" x2="868" y2="1000" stroke="#94A3B8" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 12"/>
+<path d="M884 1000 l-20 -11 v22 z" fill="#94A3B8"/>
+<circle cx="230" cy="1000" r="62" fill="#0EA5E9"/>
+<g transform="translate(189.7,959.7) scale(3.358333333333334)"><path d="M12 22v-5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8V2" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 8V2" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="230" y="1106" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">Einstecken</text>
+<text x="230" y="1138" text-anchor="middle" font-family="Inter" font-size="19" fill="#64748B">Abfahrtszeit einmal festlegen</text>
+<circle cx="600" cy="1000" r="62" fill="#0B2347"/>
+<g transform="translate(559.7,959.7) scale(3.358333333333334)"><circle cx="12" cy="12" r="10" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12 6 12 12 16 14" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="600" y="1106" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">Plattform beobachtet Preise</text>
+<text x="600" y="1138" text-anchor="middle" font-family="Inter" font-size="19" fill="#64748B">Tarife, Solar &amp; Netz — alle 15 Min.</text>
+<circle cx="970" cy="1000" r="62" fill="#22C55E"/>
+<g transform="translate(929.7,959.7) scale(3.358333333333334)"><path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h1" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m11 7-3 5h4l-3 5" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="22" x2="22" y1="11" y2="13" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="970" y="1106" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">Voll zur Abfahrt</text>
+<text x="970" y="1138" text-anchor="middle" font-family="Inter" font-size="19" fill="#64748B">geladen in den günstigsten Stunden</text>
+<rect x="345" y="1180" width="510" height="120" rx="16" fill="#0B2347"/>
+<text x="600" y="1231" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="42" fill="#38BDF8">bis zu 40% günstiger</text>
+<text x="600" y="1272" text-anchor="middle" font-family="Inter" font-size="20" fill="#B8D4EE">ggü. sofortigem Laden beim Einstecken</text>
+<rect y="1326" width="1200" height="74" fill="#0B2347"/>
+<g transform="translate(60,1340) scale(1.375)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="120" y="1372" font-family="Outfit" font-weight="600" font-size="22" fill="#FFFFFF">chargecontrol.ai</text>
+<text x="1140" y="1372" text-anchor="end" font-family="Inter" font-size="18" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="1320" width="1200" height="6" fill="url(#bar)"/>
+</svg>

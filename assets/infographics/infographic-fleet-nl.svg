@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="euroFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#22C55E" stop-opacity="0.30"/><stop offset="100%" stop-color="#22C55E" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1400" fill="#F8FAFC"/>
+<rect width="1200" height="230" fill="url(#bgNavy)"/>
+<g transform="translate(70,62) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="168" y="112" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+<text x="72" y="168" font-family="Outfit" font-weight="500" font-size="20" letter-spacing="5" fill="#38BDF8">WAGENPARKBEHEER</text>
+<text x="70" y="212" font-family="Outfit" font-weight="700" font-size="42" fill="#FFFFFF">Eén controlekamer voor je elektrische wagenpark</text>
+<text x="70" y="296" font-family="Inter" font-size="23" fill="#475569">Elke rijder, lader en kWh — zichtbaar, factureerbaar en geoptimaliseerd in één platform.</text>
+<text x="70" y="330" font-family="Inter" font-size="19" fill="#94A3B8">Dashboard met illustratieve cijfers.</text>
+<rect x="70" y="370" width="1060" height="880" rx="20" fill="#EEF4FA" stroke="#DBE7F3" stroke-width="2"/>
+<circle cx="110" cy="404" r="7" fill="#F87171"/><circle cx="136" cy="404" r="7" fill="#FBBF24"/><circle cx="162" cy="404" r="7" fill="#34D399"/>
+<g transform="translate(560,386) scale(1.125)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#0B2347" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="608" y="412" font-family="Outfit" font-weight="600" font-size="20" fill="#0B2347">Wagenpark-dashboard</text>
+<rect x="100" y="450" width="330" height="130" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="124" y="508" font-family="JetBrains Mono" font-weight="600" font-size="38" fill="#0EA5E9">247</text>
+<text x="124" y="548" font-family="Inter" font-size="19" fill="#64748B">voertuigen in beheer</text>
+<rect x="450" y="450" width="330" height="130" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="474" y="508" font-family="JetBrains Mono" font-weight="600" font-size="38" fill="#22C55E">98,5%</text>
+<text x="474" y="548" font-family="Inter" font-size="19" fill="#64748B">uptime laadpunten</text>
+<rect x="800" y="450" width="330" height="130" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="824" y="508" font-family="JetBrains Mono" font-weight="600" font-size="38" fill="#0B2347">€ 12,4K</text>
+<text x="824" y="548" font-family="Inter" font-size="19" fill="#64748B">bespaard deze maand</text>
+<text x="130" y="650" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">Laadkosten per maand</text>
+<rect x="130" y="742.8" width="56" height="187.2" rx="10" fill="#CBD5E1"/>
+<text x="158" y="960" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">feb</text><rect x="218" y="728.4" width="56" height="201.6" rx="10" fill="#CBD5E1"/>
+<text x="246" y="960" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">mrt</text><rect x="306" y="762" width="56" height="168" rx="10" fill="#CBD5E1"/>
+<text x="334" y="960" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">apr</text><rect x="394" y="776.4" width="56" height="153.6" rx="10" fill="#0EA5E9"/>
+<text x="422" y="960" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">mei</text><rect x="482" y="790.8" width="56" height="139.2" rx="10" fill="#0EA5E9"/>
+<text x="510" y="960" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">jun</text><rect x="570" y="805.2" width="56" height="124.8" rx="10" fill="#0EA5E9"/>
+<text x="598" y="960" text-anchor="middle" font-family="Inter" font-size="17" fill="#64748B">jul</text>
+<line x1="110" y1="930" x2="658" y2="930" stroke="#94A3B8" stroke-width="2"/>
+<text x="378" y="996" text-anchor="middle" font-family="Inter" font-size="17" fill="#15803D">slim laden aan sinds mei</text>
+<text x="724" y="614" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">Voertuigen</text>
+<rect x="700" y="636" width="430" height="352" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="724" y="674" font-family="JetBrains Mono" font-size="20" fill="#0B2347">VAN-014</text>
+<rect x="850" y="656" width="220" height="22" rx="11" fill="#E2E8F0"/>
+<rect x="850" y="656" width="202.4" height="22" rx="11" fill="#22C55E"/>
+<text x="1086" y="674" font-family="JetBrains Mono" font-size="18" fill="#475569">92%</text>
+<text x="850" y="702" font-family="Inter" font-size="16" fill="#64748B">depot</text><text x="724" y="760" font-family="JetBrains Mono" font-size="20" fill="#0B2347">VAN-007</text>
+<rect x="850" y="742" width="220" height="22" rx="11" fill="#E2E8F0"/>
+<rect x="850" y="742" width="156.2" height="22" rx="11" fill="#0EA5E9"/>
+<text x="1086" y="760" font-family="JetBrains Mono" font-size="18" fill="#475569">71%</text>
+<text x="850" y="788" font-family="Inter" font-size="16" fill="#64748B">thuis · ChargeBack</text><text x="724" y="846" font-family="JetBrains Mono" font-size="20" fill="#0B2347">CAR-021</text>
+<rect x="850" y="828" width="220" height="22" rx="11" fill="#E2E8F0"/>
+<rect x="850" y="828" width="121" height="22" rx="11" fill="#0EA5E9"/>
+<text x="1086" y="846" font-family="JetBrains Mono" font-size="18" fill="#475569">55%</text>
+<text x="850" y="874" font-family="Inter" font-size="16" fill="#64748B">publiek · roaming</text><text x="724" y="932" font-family="JetBrains Mono" font-size="20" fill="#0B2347">VAN-029</text>
+<rect x="850" y="914" width="220" height="22" rx="11" fill="#E2E8F0"/>
+<rect x="850" y="914" width="74.8" height="22" rx="11" fill="#F59E0B"/>
+<text x="1086" y="932" font-family="JetBrains Mono" font-size="18" fill="#475569">34%</text>
+<text x="850" y="960" font-family="Inter" font-size="16" fill="#64748B">laadt nu</text>
+<rect x="100" y="1060" width="1030" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="130" y="1112" font-family="Outfit" font-weight="600" font-size="22" fill="#0B2347">Alle geldstromen geautomatiseerd</text>
+<text x="130" y="1150" font-family="Inter" font-size="19" fill="#64748B">ChargeBack-vergoeding · split billing · facturatie · CO2- en kostenrapporten</text>
+<g transform="translate(880,1085) scale(4.2)"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12h5" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 9.5a4 4 0 1 0 0 5.2" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<rect y="1326" width="1200" height="74" fill="#0B2347"/>
+<g transform="translate(60,1340) scale(1.375)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="120" y="1372" font-family="Outfit" font-weight="600" font-size="22" fill="#FFFFFF">chargecontrol.ai</text>
+<text x="1140" y="1372" text-anchor="end" font-family="Inter" font-size="18" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="1320" width="1200" height="6" fill="url(#bar)"/>
+</svg>
