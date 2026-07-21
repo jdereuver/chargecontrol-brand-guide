@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320">
+<defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+<rect width="320" height="320" fill="url(#bg)"/>
+<circle cx="160" cy="160" r="106" fill="#0EA5E9" opacity="0.1"/>
+<circle cx="160" cy="160" r="96" fill="#0F172A" stroke="#0EA5E9" stroke-width="3"/>
+<g transform="translate(160,160)">
+  <path d="M0,-52.800000000000004 C67.19999999999999,-52.800000000000004 62.400000000000006,9.600000000000001 52.800000000000004,33.599999999999994" stroke="#0EA5E9" stroke-width="14.399999999999999" stroke-linecap="round" fill="none"/>
+  <path d="M38.400000000000006,52.800000000000004 C9.600000000000001,62.400000000000006 -48,62.400000000000006 -57.599999999999994,14.399999999999999 C-62.400000000000006,-24 -43.2,-52.800000000000004 -14.399999999999999,-57.599999999999994" stroke="#1E293B" stroke-width="14.399999999999999" stroke-linecap="round" fill="none"/>
+  <path d="M7.68,-33.599999999999994 L-14.399999999999999,4.800000000000001 L1.92,4.800000000000001 L-4.800000000000001,33.599999999999994 L17.28,-1.92 L1.92,-1.92 Z" fill="#0EA5E9"/>
+</g>
+</svg>

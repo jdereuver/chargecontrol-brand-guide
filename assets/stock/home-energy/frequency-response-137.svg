@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs><linearGradient id="g137" gradientTransform="rotate(356)"><stop offset="0%" stop-color="#38BDF8" stop-opacity="0.08"/><stop offset="100%" stop-color="#1E293B" stop-opacity="0.15"/></linearGradient></defs>
+<rect width="800" height="600" fill="#F8FAFC"/>
+<rect width="800" height="600" fill="url(#g137)"/>
+<circle cx="42.341394761895195" cy="323.870769537865" r="32.80343783349119" fill="#1E293B" opacity="0.32091374264183803"/><circle cx="259.395200628224" cy="341.35589202992236" r="95.79724948461843" fill="#0EA5E9" opacity="0.2583832459602349"/><circle cx="125.90923172040772" cy="117.34710020697405" r="27.02892743705672" fill="#4ADE80" opacity="0.2409399332394264"/><circle cx="739.8911997116089" cy="113.54551735664302" r="67.93520268791839" fill="#38BDF8" opacity="0.39757356657420617"/><circle cx="50.48915077977735" cy="428.37226616998413" r="53.69051493116702" fill="#1E293B" opacity="0.25079151331520777"/>
+<g transform="translate(310,210)"><path d="M90,27 L27,90 L54,90 L54,153 L125.99999999999999,153 L125.99999999999999,90 L153,90 Z" fill="none" stroke="#22C55E" stroke-width="2" opacity="0.5"/></g>
+</svg>

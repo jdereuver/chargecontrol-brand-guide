@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+<defs><linearGradient id="g186" gradientTransform="rotate(34)"><stop offset="0%" stop-color="#475569" stop-opacity="0.08"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.15"/></linearGradient></defs>
+<rect width="1200" height="800" fill="#0F172A"/>
+<rect width="1200" height="800" fill="url(#g186)"/>
+<circle cx="1023.4543739105151" cy="265.10913024200977" r="68.91561635668913" fill="#475569" opacity="0.22912376735277823"/><circle cx="1132.636941906658" cy="419.3887680949539" r="86.70283506317328" fill="#475569" opacity="0.1945933120274854"/><circle cx="519.187413825828" cy="521.9129991921717" r="79.17795991448496" fill="#475569" opacity="0.1183564056813311"/><circle cx="464.4499611709732" cy="7.002104452813142" r="28.43757443915827" fill="#64748B" opacity="0.21276411219757432"/><circle cx="505.74067971272456" cy="255.73957660770006" r="81.50683051115539" fill="#22C55E" opacity="0.3485198648632689"/><circle cx="1093.4766394025428" cy="41.25284779933546" r="73.66189015438957" fill="#64748B" opacity="0.19988611270662965"/><circle cx="1143.591305933512" cy="759.3861773231869" r="80.34825885700832" fill="#475569" opacity="0.13725559198041967"/>
+<g transform="translate(480,280)"><rect x="24" y="96" width="192" height="84" rx="4" fill="none" stroke="#1E293B" stroke-width="2" opacity="0.5"/><circle cx="72" cy="180" r="19.2" fill="#1E293B" opacity="0.4"/><circle cx="168" cy="180" r="19.2" fill="#1E293B" opacity="0.4"/></g>
+</svg>

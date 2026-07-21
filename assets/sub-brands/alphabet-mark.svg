@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Alphabet">
+  <rect width="200" height="200" rx="32" fill="#1A1A1A"/>
+  <text x="100" y="125" font-family="Helvetica, Arial, sans-serif" font-size="120" font-weight="700" fill="#fff" text-anchor="middle">A</text>
+  <circle cx="156" cy="118" r="10" fill="#F39200"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+<defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+<rect width="1584" height="396" fill="url(#bg)"/>
+<rect y="364.32" width="1584" height="31.68" fill="url(#accent)" opacity="0.8"/>
+<g opacity="0.06">
+  <line x1="99" y1="0" x2="99" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="198" y1="0" x2="198" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="297" y1="0" x2="297" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="396" y1="0" x2="396" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="495" y1="0" x2="495" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="594" y1="0" x2="594" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="693" y1="0" x2="693" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="792" y1="0" x2="792" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="891" y1="0" x2="891" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="990" y1="0" x2="990" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="1089" y1="0" x2="1089" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="1188" y1="0" x2="1188" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="1287" y1="0" x2="1287" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="1386" y1="0" x2="1386" y2="396" stroke="#0EA5E9" stroke-width="1"/><line x1="1485" y1="0" x2="1485" y2="396" stroke="#0EA5E9" stroke-width="1"/>
+</g>
+<g transform="translate(126.72,198)">
+  <g transform="scale(1.98)">
+    <path d="M0,-12 C14,-12 13,2 11,7" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M8,11 C2,13 -10,13 -12,3 C-13,-5 -9,-11 -3,-12" stroke="white" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9"/>
+    <path d="M1.5,-7 L-3,1 L0.5,1 L-0.5,7 L4,-1 L1,-1 Z" fill="#0EA5E9"/>
+  </g>
+</g>
+<text x="265.32" y="190.08" font-family="system-ui,-apple-system,sans-serif" font-size="55.440000000000005" font-weight="700" fill="white">ChargeControl</text>
+<text x="265.32" y="245.51999999999998" font-family="system-ui,-apple-system,sans-serif" font-size="25.740000000000002" fill="#0EA5E9" opacity="0.9">Smart Energy Management Platform</text>
+</svg>

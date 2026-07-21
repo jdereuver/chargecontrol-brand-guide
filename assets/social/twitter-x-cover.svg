@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+<defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+<rect width="1500" height="500" fill="url(#bg)"/>
+<rect y="460" width="1500" height="40" fill="url(#accent)" opacity="0.8"/>
+<g opacity="0.06">
+  <line x1="93.75" y1="0" x2="93.75" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="187.5" y1="0" x2="187.5" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="281.25" y1="0" x2="281.25" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="375" y1="0" x2="375" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="468.75" y1="0" x2="468.75" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="562.5" y1="0" x2="562.5" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="656.25" y1="0" x2="656.25" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="750" y1="0" x2="750" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="843.75" y1="0" x2="843.75" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="937.5" y1="0" x2="937.5" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="1031.25" y1="0" x2="1031.25" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="1125" y1="0" x2="1125" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="1218.75" y1="0" x2="1218.75" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="1312.5" y1="0" x2="1312.5" y2="500" stroke="#0EA5E9" stroke-width="1"/><line x1="1406.25" y1="0" x2="1406.25" y2="500" stroke="#0EA5E9" stroke-width="1"/>
+</g>
+<g transform="translate(120,250)">
+  <g transform="scale(2.5)">
+    <path d="M0,-12 C14,-12 13,2 11,7" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M8,11 C2,13 -10,13 -12,3 C-13,-5 -9,-11 -3,-12" stroke="white" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9"/>
+    <path d="M1.5,-7 L-3,1 L0.5,1 L-0.5,7 L4,-1 L1,-1 Z" fill="#0EA5E9"/>
+  </g>
+</g>
+<text x="295" y="240" font-family="system-ui,-apple-system,sans-serif" font-size="70" font-weight="700" fill="white">ChargeControl</text>
+<text x="295" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="32.5" fill="#0EA5E9" opacity="0.9">Smart Energy Management Platform</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+<defs><linearGradient id="g3" gradientTransform="rotate(215)"><stop offset="0%" stop-color="#1E293B" stop-opacity="0.08"/><stop offset="100%" stop-color="#1E293B" stop-opacity="0.15"/></linearGradient></defs>
+<rect width="1080" height="1080" fill="#F8FAFC"/>
+<rect width="1080" height="1080" fill="url(#g3)"/>
+<circle cx="868.4049827497499" cy="162.54673063992217" r="64.65992927985259" fill="#38BDF8" opacity="0.13111489934950593"/><circle cx="173.21569712200733" cy="636.2286261992796" r="21.07585214178623" fill="#0EA5E9" opacity="0.1450740855606963"/><circle cx="216.56884915807177" cy="272.6545568673448" r="24.82545093151317" fill="#0284C7" opacity="0.3373928452258863"/><circle cx="581.5807250156819" cy="627.249239168362" r="42.07157375483921" fill="#22C55E" opacity="0.1743994210608298"/><circle cx="111.85752554969632" cy="789.4394906511899" r="42.92752949793593" fill="#0284C7" opacity="0.14271806221708475"/>
+<g transform="translate(378,378)"><path d="M178.20000000000002,32.4 L97.2,162 L145.8,162 L129.6,291.6 L226.79999999999998,145.8 L178.20000000000002,145.8 Z" fill="#1E293B" opacity="0.6"/></g>
+</svg>
