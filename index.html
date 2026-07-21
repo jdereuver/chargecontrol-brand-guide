@@ -71,7 +71,7 @@ footer a{color:#7DD3FC}
   <p>The complete brand system — logos, colors, typography, icons, sub-brands, social templates, and the full branded image library. Every asset on this page is downloadable.</p>
 </div>
 <nav><div class="wrap">
-  <a href="#logos">Logos</a><a href="#colors">Colors</a><a href="#typography">Typography</a><a href="#icons">Favicons &amp; Icons</a><a href="#subbrands">Sub-Brands</a><a href="#social">Social Media</a><a href="#photos">Photos</a><a href="#marketing">Marketing</a><a href="#infographics">Infographics</a><a href="#iconset">Icon Set</a><a href="#stock">Stock Library</a><a href="#usage">Usage Rules</a><a href="#naming">Naming</a><a href="#email">Email</a>
+  <a href="#logos">Logos</a><a href="#colors">Colors</a><a href="#typography">Typography</a><a href="#icons">Favicons &amp; Icons</a><a href="#subbrands">Sub-Brands</a><a href="#social">Social Media</a><a href="#photos">Photos</a><a href="#marketing">Marketing</a><a href="#infographics">Infographics</a><a href="#iconset">Icon Set</a><a href="#stock">Stock Library</a><a href="#usage">Usage Rules</a><a href="#naming">Naming</a><a href="#email">Email</a><a href="#voice">Tone of Voice</a><a href="#accessibility">Accessibility</a><a href="#print">Print</a><a href="#dataviz">Data Viz</a><a href="#glossary">Glossary</a>
 </div></nav>
 
 <section id="logos">
@@ -319,6 +319,232 @@ footer a{color:#7DD3FC}
     <tr><td>Signature</td><td>Name · title, email/phone, chargecontrol.ai link, italic tagline</td></tr>
     <tr><td>Localization</td><td>Invite emails localized in EN / NL / DE / FR</td></tr>
   </table>
+</section>
+
+<section id="voice">
+  <h2>Tone of Voice</h2>
+  <p class="lead">How ChargeControl sounds. The market is Dutch-first — we write Dutch copy for Dutch audiences and keep established English product terms (smart charging, ChargeBack, Home Energy Hub) untranslated. One brand voice, tuned per audience.</p>
+  <h3>Voice principles</h3>
+  <ul>
+    <li><strong>Clear over clever.</strong> Energy is complicated; our language isn't. Short sentences, active voice, one idea per sentence.</li>
+    <li><strong>Confident, never hyped.</strong> We state what the platform does. No "revolutionary", no exclamation-mark enthusiasm.</li>
+    <li><strong>Helpful, human, direct.</strong> We talk to people ("you/je"), not at "users". We say what happens next.</li>
+    <li><strong>Precise with numbers.</strong> Money, energy and savings always carry units and honest framing — see <a href="#dataviz">Data Visualization</a> for formatting.</li>
+    <li><strong>Dutch-first.</strong> Consumer copy defaults to Dutch (informal "je"); business and investor copy may use "u" or English. Established English product terms stay in English in every language.</li>
+  </ul>
+  <h3>Per audience</h3>
+  <table>
+    <tr><th>Audience</th><th>Register</th><th>Focus on</th><th>Avoid</th></tr>
+    <tr><td>Drivers &amp; consumers</td><td>Friendly, informal (NL "je")</td><td>What it saves and does for them, in plain language; protocols stay invisible</td><td>Acronyms (OCPP, V2G, DLB) without explanation; technical detail they didn't ask for</td></tr>
+    <tr><td>Fleet managers &amp; partners</td><td>Professional, concrete</td><td>Control, cost, compliance, reporting; correct technical terms are welcome</td><td>Consumer fluff; vague promises without numbers</td></tr>
+    <tr><td>Investors</td><td>Factual, precise</td><td>Verified facts and clearly-labelled projections</td><td>Hype adjectives; unverified claims; mixing actuals with forecasts</td></tr>
+  </table>
+  <h3>Examples</h3>
+  <div class="dos-donts">
+    <div class="do"><h4>Write like this</h4><ul>
+      <li>"Je auto laadt automatisch op de goedkoopste uren. Gemiddeld bespaar je zo tot 30% op je laadkosten." <span class="meta">(consumer — plain, concrete)</span></li>
+      <li>"ChargeBack reimburses home charging automatically — verified sessions, one monthly payout, full audit trail." <span class="meta">(business — control &amp; proof)</span></li>
+      <li>"Charging pauses when your home's power draw peaks, and resumes automatically." <span class="meta">(explains DLB without the acronym)</span></li>
+    </ul></div>
+    <div class="dont"><h4>Not like this</h4><ul>
+      <li>"Our revolutionary AI-driven OCPP 2.0.1 smart charging solution disrupts the e-mobility landscape!" <span class="meta">(hype + acronym soup)</span></li>
+      <li>"The user should configure their DLB parameters in the portal." <span class="meta">("the user", unexplained acronym)</span></li>
+      <li>"Bespaar gigantisch veel geld!!!" <span class="meta">(vague claim, hype punctuation)</span></li>
+    </ul></div>
+  </div>
+  <p class="note">Naming is part of voice: always follow the <a href="#naming">Naming Rules</a> — "Home Energy Hub" (never abbreviations), "ChargeBack" with capital C and B, "Sparky AI advisor".</p>
+</section>
+
+<section id="accessibility">
+  <h2>Accessibility &amp; Contrast</h2>
+  <p class="lead">Minimum rules so branded surfaces stay legible for everyone. Target is <strong>WCAG 2.1 AA</strong>: contrast ≥ 4.5:1 for normal text, ≥ 3:1 for large text (≥ 24px, or ≥ 19px bold) and UI graphics.</p>
+  <h3>Approved text/background pairs</h3>
+  <table>
+    <tr><th>Text</th><th>Background</th><th>Ratio</th><th>Verdict</th></tr>
+    <tr><td class="mono">#0B2347 navy</td><td class="mono">#FFFFFF white</td><td class="mono">15.8:1</td><td>✅ AAA — default body text</td></tr>
+    <tr><td class="mono">#FFFFFF white</td><td class="mono">#0B2347 navy</td><td class="mono">15.8:1</td><td>✅ AAA — dark surfaces</td></tr>
+    <tr><td class="mono">#FFFFFF white</td><td class="mono">#071120 dark bg</td><td class="mono">18.6:1</td><td>✅ AAA</td></tr>
+    <tr><td class="mono">#0EA5E9 cyan</td><td class="mono">#0B2347 navy</td><td class="mono">5.6:1</td><td>✅ AA — accent text on dark</td></tr>
+    <tr><td class="mono">#0EA5E9 cyan</td><td class="mono">#071120 dark bg</td><td class="mono">6.6:1</td><td>✅ AA</td></tr>
+    <tr><td class="mono">#0B2347 navy</td><td class="mono">#0EA5E9 cyan</td><td class="mono">5.6:1</td><td>✅ AA — text on cyan buttons/badges</td></tr>
+    <tr><td class="mono">#0369A1 deep cyan</td><td class="mono">#FFFFFF white</td><td class="mono">5.9:1</td><td>✅ AA — accessible link tint on white</td></tr>
+    <tr><td class="mono">#64748B muted</td><td class="mono">#FFFFFF white</td><td class="mono">4.8:1</td><td>✅ AA — captions, helper text</td></tr>
+    <tr><td class="mono">#22C55E green</td><td class="mono">#0B2347 navy</td><td class="mono">6.9:1</td><td>✅ AA — success on dark</td></tr>
+    <tr><td class="mono">#F59E0B amber</td><td class="mono">#0B2347 navy</td><td class="mono">7.3:1</td><td>✅ AA — warning on dark</td></tr>
+    <tr><td class="mono">#0EA5E9 cyan</td><td class="mono">#FFFFFF white</td><td class="mono">2.8:1</td><td>⛔ Fails — never for text; icons/graphics only</td></tr>
+    <tr><td class="mono">#22C55E green</td><td class="mono">#FFFFFF white</td><td class="mono">2.3:1</td><td>⛔ Fails — pair with navy text instead</td></tr>
+    <tr><td class="mono">#F59E0B amber</td><td class="mono">#FFFFFF white</td><td class="mono">2.2:1</td><td>⛔ Fails — pair with navy text instead</td></tr>
+  </table>
+  <h3>Rules</h3>
+  <ul>
+    <li><strong>Cyan #0EA5E9 is not a text color on white.</strong> Use it for icons, charts, fills and large graphic elements; for link or label text on white, use deep cyan <span class="mono">#0369A1</span>.</li>
+    <li><strong>Green and amber never carry text on light backgrounds</strong> — use them as status fills/badges with navy or white text that passes AA.</li>
+    <li><strong>Minimum text sizes:</strong> body 16px, secondary/captions 14px, never below 12px anywhere. Line-height ≥ 1.5 for body copy.</li>
+    <li><strong>Focus states:</strong> every interactive element shows a visible focus ring — 2px cyan <span class="mono">#0EA5E9</span> outline with 2px offset (the ring is a graphic, so 3:1 against white is satisfied at ≥ 2px thickness with the offset gap).</li>
+    <li><strong>Never encode meaning in color alone</strong> — pair status colors with an icon or label (e.g. ✓ / ⚠ text).</li>
+    <li><strong>Text over photos</strong> needs a navy scrim (≥ 60% opacity) or a solid panel — never white text straight on a busy image.</li>
+  </ul>
+</section>
+
+<section id="print">
+  <h2>Print Specifications</h2>
+  <p class="lead">Values for offset and digital print. CMYK and Pantone values below are standard conversions from the hex masters — <strong>always verify with a printed proof</strong> before large runs; the hex values remain the source of truth.</p>
+  <h3>Color conversions</h3>
+  <table>
+    <tr><th>Color</th><th>Hex (master)</th><th>CMYK (coated)</th><th>Pantone equivalent</th></tr>
+    <tr><td>Brand Cyan</td><td class="mono">#0EA5E9</td><td class="mono">94 / 29 / 0 / 9</td><td class="mono">PMS 2925 C</td></tr>
+    <tr><td>Brand Navy</td><td class="mono">#0B2347</td><td class="mono">85 / 51 / 0 / 72</td><td class="mono">PMS 282 C</td></tr>
+    <tr><td>Secondary Slate</td><td class="mono">#1E293B</td><td class="mono">49 / 31 / 0 / 77</td><td class="mono">PMS 5395 C</td></tr>
+    <tr><td>Accent Green</td><td class="mono">#22C55E</td><td class="mono">83 / 0 / 52 / 23</td><td class="mono">PMS 7481 C</td></tr>
+    <tr><td>Warning Amber</td><td class="mono">#F59E0B</td><td class="mono">0 / 36 / 96 / 4</td><td class="mono">PMS 137 C</td></tr>
+  </table>
+  <h3>Logo in print</h3>
+  <table>
+    <tr><th>Rule</th><th>Spec</th></tr>
+    <tr><td>Minimum size — icon</td><td><strong>8 mm</strong> wide (print) · 24 px (digital)</td></tr>
+    <tr><td>Minimum size — full lockup</td><td><strong>25 mm</strong> wide (print) · 120 px (digital)</td></tr>
+    <tr><td>Clear space</td><td>At least the <strong>bolt's width</strong> on all sides — nothing enters this zone</td></tr>
+    <tr><td>Line weight</td><td>Stroke width 5 (relative to the 32-unit viewBox) with round caps survives down to the minimum sizes — never thin the strokes to "help" small print</td></tr>
+    <tr><td>File format</td><td>Always place the vector SVG/EPS from <a href="#logos">Logos</a>; never a screenshot or re-export</td></tr>
+  </table>
+  <h3>Paper-friendly variants</h3>
+  <ul>
+    <li><strong>1-color print:</strong> use the monochrome navy icon/lockup (PMS 282 C or 100% K as fallback). The cyan monochrome variant is for accent use on white coated stock only.</li>
+    <li><strong>On dark or navy stock:</strong> use the white monochrome variant — never the primary two-color mark on navy.</li>
+    <li><strong>Uncoated / newsprint:</strong> prefer the navy monochrome mark; large solid cyan areas shift towards teal on uncoated paper — avoid full-bleed cyan there.</li>
+    <li><strong>Documents:</strong> body text prints in navy or black, headings in Outfit, body in Inter — same hierarchy as digital.</li>
+  </ul>
+</section>
+
+<section id="dataviz">
+  <h2>Data Visualization</h2>
+  <p class="lead">Charts are part of the brand. One ordered color sequence, honest axes (bar charts start at zero), Dutch number formatting, and JetBrains Mono for numerals.</p>
+  <h3>Chart color sequence</h3>
+  <p>Use series colors <strong>in this order</strong> — don't skip ahead. Single-series charts use Brand Cyan only.</p>
+  <div class="grid g6">
+    <div class="card"><div class="swatch" style="background:#0EA5E9;height:64px">1</div><div class="pad"><p class="meta mono">#0EA5E9</p></div></div>
+    <div class="card"><div class="swatch" style="background:#0B2347;height:64px">2</div><div class="pad"><p class="meta mono">#0B2347</p></div></div>
+    <div class="card"><div class="swatch" style="background:#22C55E;height:64px">3</div><div class="pad"><p class="meta mono">#22C55E</p></div></div>
+    <div class="card"><div class="swatch" style="background:#F59E0B;height:64px">4</div><div class="pad"><p class="meta mono">#F59E0B</p></div></div>
+    <div class="card"><div class="swatch" style="background:#64748B;height:64px">5</div><div class="pad"><p class="meta mono">#64748B</p></div></div>
+    <div class="card"><div class="swatch" style="background:#7DD3FC;color:#0B2347;height:64px">6</div><div class="pad"><p class="meta mono">#7DD3FC</p></div></div>
+  </div>
+  <h3>Number formatting (NL-first)</h3>
+  <table>
+    <tr><th>Type</th><th>Format</th><th>Example</th></tr>
+    <tr><td>Currency</td><td>€ sign, thousands dot, decimal comma, 2 decimals for exact amounts</td><td class="mono">€ 1.234,56 · € 12.500</td></tr>
+    <tr><td>Energy</td><td>Value + non-breaking space + unit, decimal comma, max 1 decimal in charts</td><td class="mono">12,5 kWh · 340 kWh</td></tr>
+    <tr><td>Power</td><td>Whole numbers where possible</td><td class="mono">11 kW · 22 kW</td></tr>
+    <tr><td>Percentages</td><td>Decimal comma, no space before %</td><td class="mono">30% · 87,5%</td></tr>
+    <tr><td>Energy price</td><td>Cents with comma, per kWh</td><td class="mono">€ 0,24/kWh</td></tr>
+    <tr><td>Large numbers</td><td>Thousands dot (or k/M in dense dashboards)</td><td class="mono">14.200 sessies · 1,2 M kWh</td></tr>
+  </table>
+  <p class="note">English-language surfaces (investor decks, international partners) may use English formatting (1,234.56) — but never mix the two conventions in one document.</p>
+  <h3>Example charts</h3>
+  <div class="grid g2">
+    <div class="card"><div class="preview" style="padding:20px">
+      <svg viewBox="0 0 460 240" style="width:100%;height:auto" role="img" aria-label="Bar chart example: monthly charged energy in kWh">
+        <text x="16" y="24" font-family="Outfit" font-weight="600" font-size="15" fill="#0B2347">Geladen energie per maand</text>
+        <text x="16" y="42" font-family="Inter" font-size="11" fill="#64748B">kWh · voorbeelddata</text>
+        <line x1="50" y1="200" x2="440" y2="200" stroke="#E2E8F0" stroke-width="1"/>
+        <line x1="50" y1="140" x2="440" y2="140" stroke="#E2E8F0" stroke-width="1"/>
+        <line x1="50" y1="80" x2="440" y2="80" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="44" y="204" font-family="JetBrains Mono" font-size="10" fill="#64748B" text-anchor="end">0</text>
+        <text x="44" y="144" font-family="JetBrains Mono" font-size="10" fill="#64748B" text-anchor="end">200</text>
+        <text x="44" y="84" font-family="JetBrains Mono" font-size="10" fill="#64748B" text-anchor="end">400</text>
+        <rect x="66" y="152" width="40" height="48" rx="4" fill="#0EA5E9"/>
+        <rect x="128" y="128" width="40" height="72" rx="4" fill="#0EA5E9"/>
+        <rect x="190" y="110" width="40" height="90" rx="4" fill="#0EA5E9"/>
+        <rect x="252" y="92" width="40" height="108" rx="4" fill="#0EA5E9"/>
+        <rect x="314" y="98" width="40" height="102" rx="4" fill="#0EA5E9"/>
+        <rect x="376" y="68" width="40" height="132" rx="4" fill="#0EA5E9"/>
+        <text x="86" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">jan</text>
+        <text x="148" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">feb</text>
+        <text x="210" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">mrt</text>
+        <text x="272" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">apr</text>
+        <text x="334" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">mei</text>
+        <text x="396" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">jun</text>
+        <text x="396" y="60" font-family="JetBrains Mono" font-size="10" fill="#0B2347" text-anchor="middle">440</text>
+      </svg>
+    </div><div class="pad"><h4>Bar chart</h4><p class="meta">Single series = Brand Cyan · axis starts at 0 · rounded 4px corners · gridlines #E2E8F0 · numerals in JetBrains Mono</p></div></div>
+    <div class="card"><div class="preview" style="padding:20px">
+      <svg viewBox="0 0 460 240" style="width:100%;height:auto" role="img" aria-label="Line chart example: energy price versus smart charging window">
+        <text x="16" y="24" font-family="Outfit" font-weight="600" font-size="15" fill="#0B2347">Energieprijs vs. laadvenster</text>
+        <text x="16" y="42" font-family="Inter" font-size="11" fill="#64748B">€/kWh per uur · voorbeelddata</text>
+        <line x1="50" y1="200" x2="440" y2="200" stroke="#E2E8F0" stroke-width="1"/>
+        <line x1="50" y1="130" x2="440" y2="130" stroke="#E2E8F0" stroke-width="1"/>
+        <line x1="50" y1="60" x2="440" y2="60" stroke="#E2E8F0" stroke-width="1"/>
+        <text x="44" y="204" font-family="JetBrains Mono" font-size="10" fill="#64748B" text-anchor="end">0,10</text>
+        <text x="44" y="134" font-family="JetBrains Mono" font-size="10" fill="#64748B" text-anchor="end">0,25</text>
+        <text x="44" y="64" font-family="JetBrains Mono" font-size="10" fill="#64748B" text-anchor="end">0,40</text>
+        <rect x="180" y="52" width="120" height="148" fill="#22C55E" opacity="0.12"/>
+        <text x="240" y="70" font-family="Inter" font-size="10" fill="#15803D" text-anchor="middle">laadvenster</text>
+        <polyline fill="none" stroke="#0EA5E9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="60,95 110,80 160,110 210,165 260,180 310,160 360,105 430,88"/>
+        <polyline fill="none" stroke="#0B2347" stroke-width="2" stroke-dasharray="5 5" points="60,132 430,132"/>
+        <text x="426" y="126" font-family="Inter" font-size="10" fill="#0B2347" text-anchor="end">gemiddelde</text>
+        <text x="60" y="216" font-family="Inter" font-size="10" fill="#64748B">00:00</text>
+        <text x="240" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="middle">12:00</text>
+        <text x="430" y="216" font-family="Inter" font-size="10" fill="#64748B" text-anchor="end">23:00</text>
+      </svg>
+    </div><div class="pad"><h4>Line chart</h4><p class="meta">Series 1 cyan (3px, round caps) · reference line navy dashed · highlight bands in green at 12% opacity · decimal comma on the axis</p></div></div>
+  </div>
+  <h3>Chart rules</h3>
+  <ul>
+    <li>Titles in Outfit 600, labels in Inter, all numerals in JetBrains Mono.</li>
+    <li>Bar and area charts always start the value axis at zero; gridlines <span class="mono">#E2E8F0</span>, no chart borders or 3D effects.</li>
+    <li>Positive/negative or status coloring: green #22C55E for good/savings, amber #F59E0B for warnings, never red/green as the only differentiator (add labels or icons).</li>
+    <li>On dark surfaces, swap navy series to light cyan <span class="mono">#7DD3FC</span> and gridlines to <span class="mono">#1E293B</span>.</li>
+    <li>Legends only when there is more than one series; prefer direct labeling.</li>
+  </ul>
+</section>
+
+<section id="glossary">
+  <h2>Glossary</h2>
+  <p class="lead">ChargeControl terminology — what each term means and how to write it. For capitalization and banned-term rules, see <a href="#naming">Naming Rules</a>.</p>
+  <h3>Products &amp; brand names</h3>
+  <table>
+    <tr><th>Term</th><th>Write it as</th><th>Meaning</th></tr>
+    <tr><td>ChargeControl</td><td class="mono">ChargeControl</td><td>The company (ChargeControl B.V.) and the intelligent energy platform — EV charging, home energy, VPP and energy trading in one system.</td></tr>
+    <tr><td>ChargeBack</td><td class="mono">ChargeBack</td><td>Reimbursement product: employers automatically reimburse employees for charging their EV at home. Never the payment-dispute meaning.</td></tr>
+    <tr><td>Home Energy Hub</td><td class="mono">Home Energy Hub / the Hub</td><td>ChargeControl's own smart-meter interface device — connects to the P1 port to enable energy monitoring and dynamic load balancing at home.</td></tr>
+    <tr><td>2go</td><td class="mono">2go</td><td>Smart portable Type 2 charging cable — up to 22 kW with built-in connectivity, offered in Connect, Smart and Fleet bundles.</td></tr>
+    <tr><td>SolarPods</td><td class="mono">SolarPods</td><td>Portable solar energy sub-brand — smart power made simple.</td></tr>
+    <tr><td>Sparky</td><td class="mono">Sparky / Sparky AI advisor</td><td>The AI assistant mascot that guides people through wizards, onboarding and advice flows.</td></tr>
+  </table>
+  <h3>Charging &amp; energy terms</h3>
+  <table>
+    <tr><th>Term</th><th>Write it as</th><th>Meaning</th></tr>
+    <tr><td>Smart charging</td><td class="mono">smart charging</td><td>Automatically charging when electricity is cheapest or greenest, instead of the moment you plug in.</td></tr>
+    <tr><td>Dynamic load balancing</td><td class="mono">dynamic load balancing (DLB)</td><td>Distributing available power across chargers and household usage so the main fuse is never overloaded. Spell out on first use.</td></tr>
+    <tr><td>Charge point</td><td class="mono">charge point</td><td>A single charging unit (one or more connectors). "Charging station" is acceptable for public/consumer copy.</td></tr>
+    <tr><td>Charging session</td><td class="mono">charging session</td><td>One plug-in-to-plug-out event, with its energy (kWh), duration and cost.</td></tr>
+    <tr><td>Dynamic tariff</td><td class="mono">dynamic tariff / dynamic prices</td><td>An energy contract where the price per kWh changes hourly with the wholesale market (EPEX SPOT day-ahead prices).</td></tr>
+    <tr><td>kWh</td><td class="mono">kWh</td><td>Kilowatt-hour — the unit of charged energy and energy billing. kW (kilowatt) is power, kWh is energy; don't swap them.</td></tr>
+    <tr><td>V2G</td><td class="mono">V2G / vehicle-to-grid</td><td>Using an EV battery to feed energy back to the home or grid. Spell out on first use in consumer copy.</td></tr>
+    <tr><td>VPP</td><td class="mono">VPP / virtual power plant</td><td>Many small energy assets (EVs, batteries, solar) aggregated and traded as one flexible power plant. Spell out on first use.</td></tr>
+    <tr><td>P1 port</td><td class="mono">P1 port / P1</td><td>The data port on Dutch smart meters. "P1 dongle" refers only to generic third-party readers — never to the Home Energy Hub.</td></tr>
+    <tr><td>Plug &amp; Charge</td><td class="mono">Plug &amp; Charge (ISO 15118)</td><td>The vehicle identifies itself to the charger automatically — plug in and charging starts, no card or app.</td></tr>
+  </table>
+  <h3>Protocols &amp; standards</h3>
+  <table>
+    <tr><th>Term</th><th>Write it as</th><th>Meaning</th></tr>
+    <tr><td>OCPP</td><td class="mono">OCPP</td><td>Open Charge Point Protocol — the open standard by which the platform communicates with chargers (versions 1.6 and 2.0.1). Business/technical copy only.</td></tr>
+    <tr><td>OCPI</td><td class="mono">OCPI</td><td>Open Charge Point Interface — the roaming standard that lets drivers charge on other operators' networks.</td></tr>
+    <tr><td>ISO 15118</td><td class="mono">ISO 15118</td><td>The standard behind Plug &amp; Charge and vehicle-to-grid communication.</td></tr>
+    <tr><td>EPEX SPOT</td><td class="mono">EPEX SPOT</td><td>The European power exchange whose day-ahead prices drive dynamic tariffs and smart-charging windows.</td></tr>
+  </table>
+  <h3>Business &amp; audience terms</h3>
+  <table>
+    <tr><th>Term</th><th>Write it as</th><th>Meaning</th></tr>
+    <tr><td>Fleet</td><td class="mono">fleet</td><td>A company's electric vehicles and drivers managed together — vehicles, chargers, costs and reimbursement in one overview.</td></tr>
+    <tr><td>Workplace charging</td><td class="mono">workplace charging</td><td>Charging facilities at an employer's location for employees and visitors.</td></tr>
+    <tr><td>Home charging reimbursement</td><td class="mono">reimbursement</td><td>Paying employees back for the electricity they use charging a company EV at home — what ChargeBack automates.</td></tr>
+    <tr><td>Partner</td><td class="mono">partner</td><td>Resellers, installers and service organisations who deliver ChargeControl to their customers, optionally co-branded.</td></tr>
+    <tr><td>Installer</td><td class="mono">installer</td><td>The certified professional who installs and commissions charge points.</td></tr>
+    <tr><td>Club charging</td><td class="mono">club charging</td><td>The sports-club offering: clubs host charge points for members and visitors, turning parking into a revenue and sustainability story for the club.</td></tr>
+    <tr><td>White label</td><td class="mono">white label</td><td>The platform delivered under a partner's own brand and colors — ChargeControl chrome keeps the canonical palette on our own surfaces.</td></tr>
+  </table>
+  <p class="note">This glossary is the public-safe subset. Internal codenames and abbreviations do not appear in customer-facing copy — when in doubt, check the <a href="#naming">Naming Rules</a> banned-terms list.</p>
 </section>
 
 <footer>
