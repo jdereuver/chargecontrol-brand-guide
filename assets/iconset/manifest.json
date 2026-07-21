@@ -1,0 +1,830 @@
+{
+ "domains": [
+  [
+   "charging",
+   "EV Charging"
+  ],
+  [
+   "solar",
+   "Solar & Battery"
+  ],
+  [
+   "home",
+   "Home Energy"
+  ],
+  [
+   "grid",
+   "Grid, V2G & Trading"
+  ],
+  [
+   "fleet",
+   "Fleet & Workplace"
+  ],
+  [
+   "payments",
+   "Payments & ChargeBack"
+  ],
+  [
+   "crm",
+   "CRM & Partners"
+  ],
+  [
+   "install",
+   "Installation & Service"
+  ],
+  [
+   "club",
+   "Sports Club"
+  ],
+  [
+   "sustain",
+   "Sustainability"
+  ],
+  [
+   "users",
+   "Users, Roles & Settings"
+  ],
+  [
+   "ai",
+   "AI & Insights"
+  ],
+  [
+   "status",
+   "Notifications & Status"
+  ],
+  [
+   "actions",
+   "UI Actions"
+  ]
+ ],
+ "icons": [
+  {
+   "slug": "charge-point",
+   "domain": "charging",
+   "label": "Charge Point",
+   "existing": true
+  },
+  {
+   "slug": "charging-cable",
+   "domain": "charging",
+   "label": "Charging Cable",
+   "existing": false
+  },
+  {
+   "slug": "charging-network",
+   "domain": "charging",
+   "label": "Charging Network",
+   "existing": false
+  },
+  {
+   "slug": "charging-schedule",
+   "domain": "charging",
+   "label": "Charging Schedule",
+   "existing": false
+  },
+  {
+   "slug": "charging-session",
+   "domain": "charging",
+   "label": "Charging Session",
+   "existing": false
+  },
+  {
+   "slug": "dc-fast-charging",
+   "domain": "charging",
+   "label": "DC Fast Charging",
+   "existing": false
+  },
+  {
+   "slug": "ev-car",
+   "domain": "charging",
+   "label": "Electric Vehicle",
+   "existing": true
+  },
+  {
+   "slug": "charging",
+   "domain": "charging",
+   "label": "EV Charging",
+   "existing": true
+  },
+  {
+   "slug": "kwh-meter",
+   "domain": "charging",
+   "label": "kWh Meter",
+   "existing": false
+  },
+  {
+   "slug": "public-charging",
+   "domain": "charging",
+   "label": "Public Charging",
+   "existing": false
+  },
+  {
+   "slug": "rfid-card",
+   "domain": "charging",
+   "label": "RFID Card",
+   "existing": false
+  },
+  {
+   "slug": "roaming",
+   "domain": "charging",
+   "label": "Roaming & Locations",
+   "existing": true
+  },
+  {
+   "slug": "smart-charging",
+   "domain": "charging",
+   "label": "Smart Charging",
+   "existing": false
+  },
+  {
+   "slug": "connector-type2",
+   "domain": "charging",
+   "label": "Type 2 Connector",
+   "existing": false
+  },
+  {
+   "slug": "charging-socket",
+   "domain": "charging",
+   "label": "Wallbox Socket",
+   "existing": false
+  },
+  {
+   "slug": "battery-charging",
+   "domain": "solar",
+   "label": "Battery Charging",
+   "existing": false
+  },
+  {
+   "slug": "battery",
+   "domain": "solar",
+   "label": "Battery Storage",
+   "existing": true
+  },
+  {
+   "slug": "energy-storage",
+   "domain": "solar",
+   "label": "Energy Storage",
+   "existing": false
+  },
+  {
+   "slug": "inverter",
+   "domain": "solar",
+   "label": "Inverter",
+   "existing": false
+  },
+  {
+   "slug": "self-consumption",
+   "domain": "solar",
+   "label": "Self-Consumption",
+   "existing": false
+  },
+  {
+   "slug": "solar",
+   "domain": "solar",
+   "label": "Solar",
+   "existing": true
+  },
+  {
+   "slug": "solar-panel",
+   "domain": "solar",
+   "label": "Solar Panel",
+   "existing": false
+  },
+  {
+   "slug": "solar-yield",
+   "domain": "solar",
+   "label": "Solar Yield",
+   "existing": false
+  },
+  {
+   "slug": "dynamic-load-balancing",
+   "domain": "home",
+   "label": "Dynamic Load Balancing",
+   "existing": false
+  },
+  {
+   "slug": "energy-monitor",
+   "domain": "home",
+   "label": "Energy Monitor",
+   "existing": false
+  },
+  {
+   "slug": "heat-pump",
+   "domain": "home",
+   "label": "Heat Pump",
+   "existing": false
+  },
+  {
+   "slug": "home-consumption",
+   "domain": "home",
+   "label": "Home Consumption",
+   "existing": false
+  },
+  {
+   "slug": "home-energy",
+   "domain": "home",
+   "label": "Home Energy Hub",
+   "existing": true
+  },
+  {
+   "slug": "p1-connection",
+   "domain": "home",
+   "label": "P1 Connection",
+   "existing": false
+  },
+  {
+   "slug": "smart-home",
+   "domain": "home",
+   "label": "Smart Home",
+   "existing": false
+  },
+  {
+   "slug": "smart-meter",
+   "domain": "home",
+   "label": "Smart Meter",
+   "existing": false
+  },
+  {
+   "slug": "trading",
+   "domain": "grid",
+   "label": "Energy Trading",
+   "existing": true
+  },
+  {
+   "slug": "epex-day-ahead",
+   "domain": "grid",
+   "label": "EPEX Day-Ahead",
+   "existing": false
+  },
+  {
+   "slug": "grid-flexibility",
+   "domain": "grid",
+   "label": "Flexibility",
+   "existing": false
+  },
+  {
+   "slug": "grid",
+   "domain": "grid",
+   "label": "Grid / VPP",
+   "existing": true
+  },
+  {
+   "slug": "grid-connection",
+   "domain": "grid",
+   "label": "Grid Connection",
+   "existing": false
+  },
+  {
+   "slug": "peak-shaving",
+   "domain": "grid",
+   "label": "Peak Shaving",
+   "existing": false
+  },
+  {
+   "slug": "price-curve",
+   "domain": "grid",
+   "label": "Price Curve",
+   "existing": false
+  },
+  {
+   "slug": "smart-tariff",
+   "domain": "grid",
+   "label": "Smart Tariffs",
+   "existing": true
+  },
+  {
+   "slug": "v2g",
+   "domain": "grid",
+   "label": "Vehicle-to-Grid",
+   "existing": true
+  },
+  {
+   "slug": "virtual-power-plant",
+   "domain": "grid",
+   "label": "Virtual Power Plant",
+   "existing": false
+  },
+  {
+   "slug": "charging-depot",
+   "domain": "fleet",
+   "label": "Charging Depot",
+   "existing": false
+  },
+  {
+   "slug": "driver-app",
+   "domain": "fleet",
+   "label": "Driver App",
+   "existing": false
+  },
+  {
+   "slug": "drivers",
+   "domain": "fleet",
+   "label": "Drivers & Teams",
+   "existing": true
+  },
+  {
+   "slug": "fleet",
+   "domain": "fleet",
+   "label": "Fleet",
+   "existing": true
+  },
+  {
+   "slug": "company-car",
+   "domain": "fleet",
+   "label": "Lease & Company Cars",
+   "existing": false
+  },
+  {
+   "slug": "mileage-log",
+   "domain": "fleet",
+   "label": "Mileage Log",
+   "existing": false
+  },
+  {
+   "slug": "route-planning",
+   "domain": "fleet",
+   "label": "Route Planning",
+   "existing": false
+  },
+  {
+   "slug": "workplace-charging",
+   "domain": "fleet",
+   "label": "Workplace Charging",
+   "existing": false
+  },
+  {
+   "slug": "bank-reconciliation",
+   "domain": "payments",
+   "label": "Bank & Reconciliation",
+   "existing": false
+  },
+  {
+   "slug": "billing-cycle",
+   "domain": "payments",
+   "label": "Billing Cycle",
+   "existing": false
+  },
+  {
+   "slug": "chargeback",
+   "domain": "payments",
+   "label": "ChargeBack",
+   "existing": true
+  },
+  {
+   "slug": "invoice",
+   "domain": "payments",
+   "label": "Invoice",
+   "existing": false
+  },
+  {
+   "slug": "payments",
+   "domain": "payments",
+   "label": "Payments & Billing",
+   "existing": true
+  },
+  {
+   "slug": "payout",
+   "domain": "payments",
+   "label": "Payout",
+   "existing": false
+  },
+  {
+   "slug": "receipt",
+   "domain": "payments",
+   "label": "Receipt",
+   "existing": false
+  },
+  {
+   "slug": "reimbursement",
+   "domain": "payments",
+   "label": "Reimbursement",
+   "existing": false
+  },
+  {
+   "slug": "vat-tax",
+   "domain": "payments",
+   "label": "VAT & Tax",
+   "existing": false
+  },
+  {
+   "slug": "wallet",
+   "domain": "payments",
+   "label": "Wallet",
+   "existing": false
+  },
+  {
+   "slug": "phone-call",
+   "domain": "crm",
+   "label": "Calls",
+   "existing": false
+  },
+  {
+   "slug": "contract-signature",
+   "domain": "crm",
+   "label": "Contracts & Signatures",
+   "existing": false
+  },
+  {
+   "slug": "conversations",
+   "domain": "crm",
+   "label": "Conversations",
+   "existing": false
+  },
+  {
+   "slug": "deal-won",
+   "domain": "crm",
+   "label": "Deals & Wins",
+   "existing": false
+  },
+  {
+   "slug": "email-campaign",
+   "domain": "crm",
+   "label": "Email Campaigns",
+   "existing": false
+  },
+  {
+   "slug": "lead-capture",
+   "domain": "crm",
+   "label": "Lead Capture",
+   "existing": false
+  },
+  {
+   "slug": "organization",
+   "domain": "crm",
+   "label": "Organizations",
+   "existing": false
+  },
+  {
+   "slug": "partner-network",
+   "domain": "crm",
+   "label": "Partner Network",
+   "existing": false
+  },
+  {
+   "slug": "sales-pipeline",
+   "domain": "crm",
+   "label": "Sales Pipeline",
+   "existing": false
+  },
+  {
+   "slug": "commissioning",
+   "domain": "install",
+   "label": "Commissioning",
+   "existing": false
+  },
+  {
+   "slug": "firmware-update",
+   "domain": "install",
+   "label": "Firmware Update",
+   "existing": false
+  },
+  {
+   "slug": "inspection",
+   "domain": "install",
+   "label": "Inspections",
+   "existing": false
+  },
+  {
+   "slug": "installation",
+   "domain": "install",
+   "label": "Installation",
+   "existing": false
+  },
+  {
+   "slug": "installer",
+   "domain": "install",
+   "label": "Installer",
+   "existing": false
+  },
+  {
+   "slug": "service-maintenance",
+   "domain": "install",
+   "label": "Service & Maintenance",
+   "existing": false
+  },
+  {
+   "slug": "service-van",
+   "domain": "install",
+   "label": "Service Van",
+   "existing": false
+  },
+  {
+   "slug": "site-survey",
+   "domain": "install",
+   "label": "Site Survey",
+   "existing": false
+  },
+  {
+   "slug": "support-ticket",
+   "domain": "install",
+   "label": "Support Tickets",
+   "existing": false
+  },
+  {
+   "slug": "warranty",
+   "domain": "install",
+   "label": "Warranty",
+   "existing": false
+  },
+  {
+   "slug": "club-badge",
+   "domain": "club",
+   "label": "Club Badge",
+   "existing": false
+  },
+  {
+   "slug": "club-charging",
+   "domain": "club",
+   "label": "Club Charging",
+   "existing": false
+  },
+  {
+   "slug": "coach",
+   "domain": "club",
+   "label": "Coaches",
+   "existing": false
+  },
+  {
+   "slug": "federation",
+   "domain": "club",
+   "label": "Federations",
+   "existing": false
+  },
+  {
+   "slug": "match-day",
+   "domain": "club",
+   "label": "Match Day",
+   "existing": false
+  },
+  {
+   "slug": "player",
+   "domain": "club",
+   "label": "Players",
+   "existing": false
+  },
+  {
+   "slug": "scoreboard",
+   "domain": "club",
+   "label": "Scoreboard",
+   "existing": false
+  },
+  {
+   "slug": "team",
+   "domain": "club",
+   "label": "Teams",
+   "existing": false
+  },
+  {
+   "slug": "training",
+   "domain": "club",
+   "label": "Training",
+   "existing": false
+  },
+  {
+   "slug": "carbon-report",
+   "domain": "sustain",
+   "label": "Carbon Reporting",
+   "existing": false
+  },
+  {
+   "slug": "co2-reduction",
+   "domain": "sustain",
+   "label": "CO₂ Reduction",
+   "existing": false
+  },
+  {
+   "slug": "ev-transition",
+   "domain": "sustain",
+   "label": "EV Transition",
+   "existing": false
+  },
+  {
+   "slug": "green-energy",
+   "domain": "sustain",
+   "label": "Green Energy",
+   "existing": false
+  },
+  {
+   "slug": "renewable-cycle",
+   "domain": "sustain",
+   "label": "Renewable Cycle",
+   "existing": false
+  },
+  {
+   "slug": "sustainability",
+   "domain": "sustain",
+   "label": "Sustainability",
+   "existing": true
+  },
+  {
+   "slug": "activity-log",
+   "domain": "users",
+   "label": "Activity Log",
+   "existing": false
+  },
+  {
+   "slug": "developer-api",
+   "domain": "users",
+   "label": "Developer API",
+   "existing": false
+  },
+  {
+   "slug": "multi-language",
+   "domain": "users",
+   "label": "Multi-Language",
+   "existing": false
+  },
+  {
+   "slug": "permissions",
+   "domain": "users",
+   "label": "Permissions",
+   "existing": false
+  },
+  {
+   "slug": "security",
+   "domain": "users",
+   "label": "Security",
+   "existing": false
+  },
+  {
+   "slug": "settings",
+   "domain": "users",
+   "label": "Settings",
+   "existing": false
+  },
+  {
+   "slug": "user-profile",
+   "domain": "users",
+   "label": "User Profile",
+   "existing": false
+  },
+  {
+   "slug": "user-roles",
+   "domain": "users",
+   "label": "User Roles",
+   "existing": false
+  },
+  {
+   "slug": "ai-automation",
+   "domain": "ai",
+   "label": "AI Automation",
+   "existing": false
+  },
+  {
+   "slug": "forecast",
+   "domain": "ai",
+   "label": "Forecast",
+   "existing": false
+  },
+  {
+   "slug": "analytics",
+   "domain": "ai",
+   "label": "Insights & Reporting",
+   "existing": true
+  },
+  {
+   "slug": "reporting",
+   "domain": "ai",
+   "label": "Reporting",
+   "existing": false
+  },
+  {
+   "slug": "sparky-ai",
+   "domain": "ai",
+   "label": "Sparky AI Advisor",
+   "existing": true
+  },
+  {
+   "slug": "alert",
+   "domain": "status",
+   "label": "Alerts",
+   "existing": false
+  },
+  {
+   "slug": "error-state",
+   "domain": "status",
+   "label": "Errors",
+   "existing": false
+  },
+  {
+   "slug": "notification",
+   "domain": "status",
+   "label": "Notifications",
+   "existing": false
+  },
+  {
+   "slug": "offline-mode",
+   "domain": "status",
+   "label": "Offline",
+   "existing": false
+  },
+  {
+   "slug": "status-online",
+   "domain": "status",
+   "label": "Online Status",
+   "existing": false
+  },
+  {
+   "slug": "pending-status",
+   "domain": "status",
+   "label": "Pending",
+   "existing": false
+  },
+  {
+   "slug": "success",
+   "domain": "status",
+   "label": "Success",
+   "existing": false
+  },
+  {
+   "slug": "sync-status",
+   "domain": "status",
+   "label": "Sync",
+   "existing": false
+  },
+  {
+   "slug": "add",
+   "domain": "actions",
+   "label": "Add",
+   "existing": false
+  },
+  {
+   "slug": "calendar",
+   "domain": "actions",
+   "label": "Calendar",
+   "existing": false
+  },
+  {
+   "slug": "close",
+   "domain": "actions",
+   "label": "Close",
+   "existing": false
+  },
+  {
+   "slug": "copy",
+   "domain": "actions",
+   "label": "Copy",
+   "existing": false
+  },
+  {
+   "slug": "delete",
+   "domain": "actions",
+   "label": "Delete",
+   "existing": false
+  },
+  {
+   "slug": "download",
+   "domain": "actions",
+   "label": "Download",
+   "existing": false
+  },
+  {
+   "slug": "edit",
+   "domain": "actions",
+   "label": "Edit",
+   "existing": false
+  },
+  {
+   "slug": "export",
+   "domain": "actions",
+   "label": "Export",
+   "existing": false
+  },
+  {
+   "slug": "filter",
+   "domain": "actions",
+   "label": "Filter",
+   "existing": false
+  },
+  {
+   "slug": "link",
+   "domain": "actions",
+   "label": "Link",
+   "existing": false
+  },
+  {
+   "slug": "more-options",
+   "domain": "actions",
+   "label": "More Options",
+   "existing": false
+  },
+  {
+   "slug": "search",
+   "domain": "actions",
+   "label": "Search",
+   "existing": false
+  },
+  {
+   "slug": "share",
+   "domain": "actions",
+   "label": "Share",
+   "existing": false
+  },
+  {
+   "slug": "upload",
+   "domain": "actions",
+   "label": "Upload",
+   "existing": false
+  }
+ ]
+}

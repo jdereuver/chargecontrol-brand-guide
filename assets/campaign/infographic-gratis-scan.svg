@@ -31,7 +31,7 @@
 <rect x="435" y="390" width="330" height="330" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
 <rect x="435" y="390" width="330" height="10" rx="5" fill="#0B2347"/>
 <circle cx="600" cy="490" r="52" fill="#0B2347"/>
-<g transform="translate(542.8,432.8) scale(4.766666666666667)"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v4a2 2 0 0 0 2 2h4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(542.8,432.8) scale(4.766666666666667)"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="8" y1="13" x2="14" y2="13" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="8" y1="17" x2="12" y2="17" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
 <text x="600" y="595" text-anchor="middle" font-family="Outfit" font-weight="500" font-size="19" letter-spacing="3" fill="#64748B">STAP 2</text>
 <text x="600" y="633" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="27" fill="#0B2347">Rapport in 48 uur</text>
 <text x="600" y="668" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">jullie eigen ERE-bedrag,</text>
@@ -46,12 +46,12 @@
 <text x="965" y="695" text-anchor="middle" font-family="Inter" font-size="19" fill="#475569">geen verplichting</text>
 <text x="70" y="820" font-family="Outfit" font-weight="600" font-size="26" fill="#0B2347">Wat het rapport per laadpaal zegt</text>
 <rect x="70" y="850" width="515" height="210" rx="16" fill="#DCFCE7"/>
-<g transform="translate(110,890) scale(2.4)"><path d="M21.801 10A10 10 0 1 1 17 3.335" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 11 3 3L22 4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(110,890) scale(2.4)"><circle cx="12" cy="12" r="9" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m8 12.5 2.5 2.5 5.5-5.5" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
 <text x="190" y="915" font-family="Outfit" font-weight="600" font-size="24" fill="#15803D">OCPP + MID-meter?</text>
 <text x="190" y="950" font-family="Inter" font-size="19" fill="#166534">Gratis op afstand omgezet — geen monteur,</text>
 <text x="190" y="977" font-family="Inter" font-size="19" fill="#166534">geen nieuwe hardware. Verdient direct ERE.</text>
 <rect x="615" y="850" width="515" height="210" rx="16" fill="#FEF3C7"/>
-<g transform="translate(655,890) scale(2.4)"><path d="m17 2 4 4-4 4" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 11v-1a4 4 0 0 1 4-4h14" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m7 22-4-4 4-4" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 13v1a4 4 0 0 1-4 4H3" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g transform="translate(655,890) scale(2.4)"><path d="M21 12a9 9 0 1 1-2.64-6.36" fill="none" stroke="#0B2347" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 3v5h-5" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
 <text x="735" y="915" font-family="Outfit" font-weight="600" font-size="24" fill="#B45309">Geen MID-meter?</text>
 <text x="735" y="950" font-family="Inter" font-size="19" fill="#92400E">Vervangen vóór er ERE-geld kan stromen —</text>
 <text x="735" y="977" font-family="Inter" font-size="19" fill="#92400E">de scan vertelt je precies welke palen.</text>
