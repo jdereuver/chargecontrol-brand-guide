@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1400" fill="#F8FAFC"/>
+<rect width="1200" height="230" fill="url(#bgNavy)"/>
+<g transform="translate(70,62) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="168" y="112" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+<text x="72" y="168" font-family="Outfit" font-weight="500" font-size="20" letter-spacing="5" fill="#38BDF8">FLEET MANAGEMENT</text>
+<text x="70" y="212" font-family="Outfit" font-weight="700" font-size="42" fill="#FFFFFF">One control room for your electric fleet</text>
+<text x="70" y="300" font-family="Inter" font-size="23" fill="#475569">Every driver, charger and kWh — visible, billable and optimized</text>
+<text x="70" y="334" font-family="Inter" font-size="23" fill="#475569">in a single platform.</text>
+<rect x="70" y="390" width="330" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="94" y="454" font-family="JetBrains Mono" font-weight="600" font-size="42" fill="#0EA5E9">247</text>
+<text x="94" y="500" font-family="Inter" font-size="20" fill="#64748B">vehicles under management</text>
+<rect x="435" y="390" width="330" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="459" y="454" font-family="JetBrains Mono" font-weight="600" font-size="42" fill="#22C55E">98.5%</text>
+<text x="459" y="500" font-family="Inter" font-size="20" fill="#64748B">charger uptime</text>
+<rect x="800" y="390" width="330" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+<text x="824" y="454" font-family="JetBrains Mono" font-weight="600" font-size="42" fill="#0B2347">€ 12.4K</text>
+<text x="824" y="500" font-family="Inter" font-size="20" fill="#64748B">saved this month</text>
+<circle cx="120" cy="670" r="42" fill="#0EA5E9"/>
+<text x="120" y="685" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="40" fill="#FFFFFF">1</text>
+<text x="200" y="666" font-family="Outfit" font-weight="600" font-size="30" fill="#0B2347">Connect everything</text>
+<text x="200" y="704" font-family="Inter" font-size="21" fill="#475569">Depot chargers, home chargers and public charging — one account.</text>
+<line x1="120" y1="716" x2="120" y2="754" stroke="#CBD5E1" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+<circle cx="120" cy="800" r="42" fill="#0EA5E9"/>
+<text x="120" y="815" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="40" fill="#FFFFFF">2</text>
+<text x="200" y="796" font-family="Outfit" font-weight="600" font-size="30" fill="#0B2347">Automate the money flow</text>
+<text x="200" y="834" font-family="Inter" font-size="21" fill="#475569">ChargeBack reimbursement, split billing and invoicing run themselves.</text>
+<line x1="120" y1="846" x2="120" y2="884" stroke="#CBD5E1" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+<circle cx="120" cy="930" r="42" fill="#0EA5E9"/>
+<text x="120" y="945" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="40" fill="#FFFFFF">3</text>
+<text x="200" y="926" font-family="Outfit" font-weight="600" font-size="30" fill="#0B2347">Optimize every session</text>
+<text x="200" y="964" font-family="Inter" font-size="21" fill="#475569">Smart charging trims energy costs across the whole fleet.</text>
+<line x1="120" y1="976" x2="120" y2="1014" stroke="#CBD5E1" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round"/>
+<circle cx="120" cy="1060" r="42" fill="#22C55E"/>
+<text x="120" y="1075" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="40" fill="#FFFFFF">4</text>
+<text x="200" y="1056" font-family="Outfit" font-weight="600" font-size="30" fill="#0B2347">Report with confidence</text>
+<text x="200" y="1094" font-family="Inter" font-size="21" fill="#475569">CO2, cost and usage reporting per driver, vehicle or site.</text>
+<rect y="1326" width="1200" height="74" fill="#0B2347"/>
+<g transform="translate(60,1340) scale(1.375)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="120" y="1372" font-family="Outfit" font-weight="600" font-size="22" fill="#FFFFFF">chargecontrol.ai</text>
+<text x="1140" y="1372" text-anchor="end" font-family="Inter" font-size="18" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="1320" width="1200" height="6" fill="url(#bar)"/>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="bgNavy" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0E2E5C"/><stop offset="50%" stop-color="#0B2347"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="bgCyan" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="45%" stop-color="#0EA5E9"/><stop offset="100%" stop-color="#0B2347"/></linearGradient>
+<linearGradient id="bgGreen" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#134E4A"/><stop offset="50%" stop-color="#0B2F47"/><stop offset="100%" stop-color="#070F1F"/></linearGradient>
+<linearGradient id="beam" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/><stop offset="50%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+<linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#0EA5E9"/><stop offset="70%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#22C55E"/></linearGradient>
+<linearGradient id="curveFill" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.35"/><stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1200" height="1400" fill="#F8FAFC"/>
+<rect width="1200" height="230" fill="url(#bgNavy)"/>
+<g transform="translate(70,62) scale(2.25)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#0EA5E9" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#0EA5E9"/>
+</g>
+<text x="168" y="112" font-family="Outfit" font-weight="600" font-size="34" fill="#FFFFFF">ChargeControl</text>
+<text x="72" y="168" font-family="Outfit" font-weight="500" font-size="20" letter-spacing="5" fill="#38BDF8">HOME ENERGY HUB</text>
+<text x="70" y="212" font-family="Outfit" font-weight="700" font-size="42" fill="#FFFFFF">Your home as a power plant</text>
+<text x="70" y="300" font-family="Inter" font-size="23" fill="#475569">The Home Energy Hub connects solar, battery, EV and the grid —</text>
+<text x="70" y="334" font-family="Inter" font-size="23" fill="#475569">and steers energy where it earns the most, including V2G.</text>
+<line x1="409.19997423057816" y1="516.5384367601713" x2="506.29170156275876" y2="609.895866887268" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+<path d="M506.29170156275876 609.895866887268 L486.3856192320075 604.6282406437543 L500.24779355704317 590.2115793457173 Z" fill="#F59E0B"/>
+<line x1="674.9634057065309" y1="640.0292754347753" x2="798.487054772406" y2="541.2103561820752" stroke="#0EA5E9" stroke-width="6" stroke-linecap="round"/>
+<path d="M798.487054772406 541.2103561820752 L790.6783666779758 560.2635551324852 L778.1844657268872 544.6461789436246 Z" fill="#0EA5E9"/>
+<line x1="526.2507571586519" y1="761.45770236779" x2="399.86876634765883" y2="866.7760280436177" stroke="#22C55E" stroke-width="6" stroke-linecap="round"/>
+<path d="M399.86876634765883 866.7760280436177 L407.2949053837668 847.5704960536832 L420.0985933770564 862.9349216456308 Z" fill="#22C55E"/>
+<line x1="675.650339877558" y1="759.1018280293423" x2="817.5568314158068" y2="869.9662745435991" stroke="#8B5CF6" stroke-width="6" stroke-linecap="round"/>
+<path d="M817.5568314158068 869.9662745435991 L797.2159522690415 866.7649255253431 L809.5288331084878 851.0044380508517 Z" fill="#8B5CF6"/>
+<circle cx="600" cy="700" r="120" fill="#0B2347"/>
+<g transform="translate(556,638) scale(2.75)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="600" y="762" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#FFFFFF">Home Energy</text>
+<text x="600" y="790" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#FFFFFF">Hub</text>
+<circle cx="340" cy="450" r="86" fill="#FFFFFF" stroke="#F59E0B" stroke-width="5"/>
+<text x="340" y="448" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">Solar</text>
+<text x="340" y="480" text-anchor="middle" font-family="Inter" font-size="18" fill="#64748B">production</text>
+<circle cx="900" cy="460" r="86" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="5"/>
+<text x="900" y="458" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">EV</text>
+<text x="900" y="490" text-anchor="middle" font-family="Inter" font-size="18" fill="#64748B">charge + V2G</text>
+<circle cx="300" cy="950" r="86" fill="#FFFFFF" stroke="#22C55E" stroke-width="5"/>
+<text x="300" y="948" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">Battery</text>
+<text x="300" y="980" text-anchor="middle" font-family="Inter" font-size="18" fill="#64748B">store + trade</text>
+<circle cx="920" cy="950" r="86" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="5"/>
+<text x="920" y="948" text-anchor="middle" font-family="Outfit" font-weight="600" font-size="24" fill="#0B2347">Grid</text>
+<text x="920" y="980" text-anchor="middle" font-family="Inter" font-size="18" fill="#64748B">buy low, sell high</text>
+<rect x="70" y="1130" width="1060" height="120" rx="16" fill="#0B2347"/>
+<text x="600" y="1180" text-anchor="middle" font-family="Outfit" font-weight="700" font-size="30" fill="#38BDF8">Vehicle-to-Grid: your EV earns while it's parked</text>
+<text x="600" y="1222" text-anchor="middle" font-family="Inter" font-size="20" fill="#B8D4EE">Discharge to the grid at peak prices, recharge when energy is cheap or solar is free.</text>
+<rect y="1326" width="1200" height="74" fill="#0B2347"/>
+<g transform="translate(60,1340) scale(1.375)" opacity="1">
+<path d="M16 4C22.6274 4 28 9.37258 28 16C28 18.068 27.4755 20.012 26.545 21.716" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M23.95 25.5C21.84 27.08 19.1 28 16 28C9.37258 28 4 22.6274 4 16C4 11.2 6.8 7.1 10.9 5.2" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M17.5 8L11 17h5.5l-1 7L22 15h-5.5l1-7z" fill="#FFFFFF"/>
+</g>
+<text x="120" y="1372" font-family="Outfit" font-weight="600" font-size="22" fill="#FFFFFF">chargecontrol.ai</text>
+<text x="1140" y="1372" text-anchor="end" font-family="Inter" font-size="18" fill="#7DD3FC">The Intelligent Energy Platform</text>
+<rect y="1320" width="1200" height="6" fill="url(#bar)"/>
+</svg>
